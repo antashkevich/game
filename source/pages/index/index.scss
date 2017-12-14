@@ -1,0 +1,167 @@
+//@import 'compass';
+html {
+  height: 100%;
+  line-height: normal;
+}
+body {
+  font-size:16px;
+  color: #000000;
+  min-height: 100%; 
+  background: #ffffff;
+}
+.container {
+	max-width: 1055px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	background: url("images/bg-header.png") bottom no-repeat;
+    padding: 31px 0 0 0;
+	.container {
+		.header {
+			a {
+			    font-size: 20px;
+			    color: #000000;
+			    text-decoration: none;
+			    display: -webkit-box;
+			    display: -ms-flexbox;
+			    display: flex;
+			    -webkit-box-align: baseline;
+		        -ms-flex-align: baseline;
+	            align-items: baseline;
+			    -webkit-box-pack: center;
+		        -ms-flex-pack: center;
+	            justify-content: center;
+	            margin-bottom: 57px;			    
+				p {
+				    margin-right: 6px;
+				}
+			}
+			h1 {
+				font-size: 40px;
+				text-align: center;
+			    margin-bottom: 38px;
+			}
+			span {
+				font-size: 20px;
+			    text-align: center;
+			    display: block;
+			    line-height: 30px;
+			    padding: 0 250px;
+			    margin-bottom: 326px;
+			}
+			.header-info {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+			    -webkit-box-pack: justify;
+		        -ms-flex-pack: justify;
+	            justify-content: space-between;
+                padding: 0 15px;
+				.left-side, .right-side {
+					width: 49%;
+					p {
+					    line-height: 24px;				        
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Offers*/
+.wr-offers {
+	padding: 77px 0 55px 0;
+	.container {
+		h2 {
+			font-size: 20px;
+			padding: 0 15px; 
+		    margin-bottom: 45px;
+		}
+		.our_offers {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+			.offer {
+				width: 505px;
+				height: 480px;
+				background: #f8f8f8;
+			    -webkit-box-sizing: border-box;
+	            box-sizing: border-box;
+			    padding: 55px 0 0 65px;
+				margin: 0 0 15px 15px;
+				svg {
+					width: 100px;
+					height: 100px;
+					padding: 0 0 0 10px;
+				    margin-bottom: 31px;
+				}
+				h3 {
+					font-size: 20px;
+				    margin-bottom: 27px;
+				}
+				p {
+					line-height: 25px;
+				    padding: 0 70px 0 0;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	font-size: 13px;
+	background:#f8f8f8;
+	border-top: 3px solid #ededed;
+	padding: 25px 0 30px 0;
+	.container {
+		 display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+        justify-content: space-between;
+	    -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end; 
+        max-width: 1270px;
+        box-sizing: border-box;
+	    padding: 0 15px;
+		p {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		    -webkit-box-align: center;
+	        -ms-flex-align: center;
+            align-items: center;
+		    padding-left: 4px;
+			i {
+				font-size: 11px;
+				margin-right: 4px;
+			}
+		}
+		.footer-contacts {
+		    margin-right: 2px;
+			a {
+				font-size: 14px;
+				color: #1483ff;
+			    margin-left: 50px;
+			    &:hover {
+			    	text-decoration: none;
+			    }
+			}
+		}
+	}
+}
+
+/*responsive design*/
+@media all and (max-width: 1039px) {
+	.wr-offers .container .our_offers {
+	    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+	}
+}
