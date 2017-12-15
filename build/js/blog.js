@@ -29,91 +29,74 @@ module.exports = g;
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */
+/* 4 */,
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blog_scss__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blog_scss__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blog_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__blog_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_bgMain_png__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_bgMain_png__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_bgMain_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__images_bgMain_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_explode_png__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_explode_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_explode_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_bullet_png__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_bullet_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_bullet_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_ground_png__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_ground_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_ground_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_star_png__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_star_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_star_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_dude_sprite_png__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_dude_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_dude_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_belarusianCoin_sprite_png__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_belarusianCoin_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_belarusianCoin_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_zombieFemale_sprite_png__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_zombieFemale_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_zombieFemale_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_zombieMale_sprite_png__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_zombieMale_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__images_zombieMale_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_dude_sprite_json__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_dude_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__images_dude_sprite_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_zombieFemale_sprite_json__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_zombieFemale_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__images_zombieFemale_sprite_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_zombieMale_sprite_json__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_zombieMale_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__images_zombieMale_sprite_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__sounds_ambientmain_wav__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__sounds_ambientmain_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__sounds_ambientmain_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__sounds_coin_wav__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__sounds_coin_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__sounds_coin_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_normalize_css__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_normalize_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_expose_loader_PIXI_phaser_ce_build_custom_pixi_js__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_expose_loader_PIXI_phaser_ce_build_custom_pixi_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_expose_loader_PIXI_phaser_ce_build_custom_pixi_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_expose_loader_p2_phaser_ce_build_custom_p2_js__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_expose_loader_p2_phaser_ce_build_custom_p2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_expose_loader_p2_phaser_ce_build_custom_p2_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_bullet_png__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_bullet_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_bullet_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_ground_png__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_ground_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_ground_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_dude_sprite_png__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_dude_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_dude_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_dude_sprite_json__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_dude_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_dude_sprite_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_expose_loader_PIXI_phaser_ce_build_custom_pixi_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_expose_loader_PIXI_phaser_ce_build_custom_pixi_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_expose_loader_PIXI_phaser_ce_build_custom_pixi_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_expose_loader_p2_phaser_ce_build_custom_p2_js__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_expose_loader_p2_phaser_ce_build_custom_p2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_expose_loader_p2_phaser_ce_build_custom_p2_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js__);
+
+
+
+
+
+//import '../images/explode.png';
+
+
+//import '../images/star.png';
+
+
+//import '../images/belarusianCoin_sprite.png';
+//import '../images/zombieFemale_sprite.png';
+//import '../images/zombieMale_sprite.png';
+
+
+//import '../images/zombieFemale_sprite.json';
+//import '../images/zombieMale_sprite.json';
+
+//import '../sounds/ambientmain.wav';
+//import '../sounds/coin.wav';
+
+//import 'normalize.css';
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const game = new __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Game(1200, 600, __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.AUTO, '', { preload: preload, create: create, update: update});
+const game = new __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Game(1200, 600, __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.AUTO, '', { preload: preload, create: create, update: update});
 
 function preload() {
 	game.load.image('sky', '../images/bgMain.png');
 	game.load.image('ground', '../images/ground.png');
 	game.load.image('bullet', '../images/bullet.png');
-	game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
+	//game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
 	game.load.atlas('dude', '../images/dude_sprite.png', '../images/dude_sprite.json');
-	game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
-	game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
-	game.load.spritesheet('explosion', '../images/explode.png', 128, 128);
-	game.load.audio('coinSound', '../sounds/coin.wav');
-	game.load.audio('environment', '../sounds/ambientmain.wav');
+	//game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
+	//game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
+	//game.load.spritesheet('explosion', '../images/explode.png', 128, 128);
+	//game.load.audio('coinSound', '../sounds/coin.wav');
+	//game.load.audio('environment', '../sounds/ambientmain.wav');
+
+
 	// game.load.audio('step', 'sounds/step2.ogg');
 };
 
@@ -139,11 +122,11 @@ function create() {
 	game.add.tileSprite(0, 0, 10000, 600, 'sky');
 	game.world.setBounds(0, 0, 10000, 600);
 
-	environment = game.add.audio('environment');
+	/*environment = game.add.audio('environment');
 	environment.loopFull();
-	environment.play();
+	environment.play();*/
 
-	game.physics.startSystem(__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
+	game.physics.startSystem(__WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
 	cursors = game.input.keyboard.createCursorKeys();
 
 	//PLATFORMS SETTING----------------------------------------------------------------------------------------------------------------------------------
@@ -172,24 +155,24 @@ function create() {
 
 	//PLAYER SETTING----------------------------------------------------------------------------------------------------------------------------------
 	Player = function (game, x, y) {
-		__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x, y, 'dude');
-		game.physics.enable(this, __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
+		__WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x, y, 'dude');
+		game.physics.enable(this, __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
 		game.camera.follow(this);
 
 		this.collideWorldBounds = true;
 	    this.enableBody = true;
-		this.animations.add('runLeft', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('runL_', 1, 8), 10, true);
-		this.animations.add('runRight', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('runR_', 1, 8), 10, true);
-		this.animations.add('idleRight', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('idleR_', 1, 10), 15, true);
-		this.animations.add('idleLeft', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('idleL_', 1, 10), 15, true);
-		this.animations.add('jumpRight', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('jumpR_', 1, 10), 5, true);
-		this.animations.add('jumpLeft', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('jumpL_', 1, 10), 5, true);
-		this.animations.add('meleeRight', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('meleeR_', 1, 7), 5, true);
-		this.animations.add('meleeLeft', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('meleeL_', 1, 7), 5, true);
-		this.animations.add('shootRight', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('shootR_', 1, 3), 5, true);
-		this.animations.add('shootLeft', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('shootL_', 1, 3), 5, true);
-		this.animations.add('deadRight', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadR_', 1, 10), 5, true);
-		this.animations.add('deadLeft', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadL_', 1, 10), 5, true);
+		this.animations.add('runLeft', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('runL_', 1, 8), 10, true);
+		this.animations.add('runRight', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('runR_', 1, 8), 10, true);
+		this.animations.add('idleRight', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('idleR_', 1, 10), 15, true);
+		this.animations.add('idleLeft', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('idleL_', 1, 10), 15, true);
+		this.animations.add('jumpRight', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('jumpR_', 1, 10), 5, true);
+		this.animations.add('jumpLeft', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('jumpL_', 1, 10), 5, true);
+		this.animations.add('meleeRight', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('meleeR_', 1, 7), 5, true);
+		this.animations.add('meleeLeft', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('meleeL_', 1, 7), 5, true);
+		this.animations.add('shootRight', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('shootR_', 1, 3), 5, true);
+		this.animations.add('shootLeft', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('shootL_', 1, 3), 5, true);
+		this.animations.add('deadRight', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadR_', 1, 10), 5, true);
+		this.animations.add('deadLeft', __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadL_', 1, 10), 5, true);
 
 		this.body.gravity.y = 300;
 	    this.body.collideWorldBounds = true;
@@ -200,32 +183,27 @@ function create() {
 		this.playerLife = 500;
 
 		this.weapon = game.add.weapon(30, 'bullet');
-	    this.weapon.bulletKillType = __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Weapon.KILL_CAMERA_BOUNDS;
+	    this.weapon.bulletKillType = __WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Weapon.KILL_CAMERA_BOUNDS;
 	    this.weapon.bulletSpeed = 500;
 	    this.weapon.fireRate = 390;
 	    this.weapon.trackSprite(this, 65, 37, true);
-	    this.fireButton = game.input.keyboard.addKey(__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.KeyCode.SPACEBAR);
+	    this.fireButton = game.input.keyboard.addKey(__WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.KeyCode.SPACEBAR);
 
-	    this.weapon.bulletHit = function bulletExplosion(bullet) {
+	    /*this.weapon.bulletHit = function bulletExplosion(bullet) {
 	    	let explosion = game.add.sprite(bullet.x, bullet.y, 'explosion');
-
-	    	// let explosionSound = game.add.audio("explosionSound");
 
 			explosion.anchor.x = 0.5;
 		    explosion.anchor.y = 0.5;
 			explosion.animations.add('explosion');
 			explosion.animations.play('explosion', 25, false, true);
 
-			// explosionSound.play();
-	    }
+	    }*/
 
-
-		// this.stepSound = game.add.audio('step');
 
 	    game.add.existing(this);
 	};
 
-	Player.prototype = Object.create(__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.prototype);
+	Player.prototype = Object.create(__WEBPACK_IMPORTED_MODULE_8_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.prototype);
 	Player.prototype.constructor = Player;
 
 	Player.prototype.update = function() {
@@ -304,23 +282,23 @@ function create() {
 	dude = new Player(game, 15, 300);
 
 	//ZOMBIES SETTING----------------------------------------------------------------------------------------------------------------------------------
-	Zombies = function (game, x, y) {
+	/*Zombies = function (game, x, y) {
 
 		if (randomInteger(2, 12) % 2 === 0) {
-			__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x, y, 'zombieFemale');
+			Phaser.Sprite.call(this, game, x, y, 'zombieFemale');
 		} else {
-			__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x, y, 'zombieMale');
+			Phaser.Sprite.call(this, game, x, y, 'zombieMale');
 		}
 
-		game.physics.enable(this, __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
+		game.physics.enable(this, Phaser.Physics.ARCADE);
 		this.collideWorldBounds = true;
 	    this.enableBody = true;
-	    this.animations.add('walkLeft', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('walkL_', 1, 10), 10, true);
-		this.animations.add('walkRight', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('walkR_', 1, 10), 10, true);
-		this.animations.add('attackRight', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('attackR_', 1, 8), 15, true);
-		this.animations.add('attackLeft', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('attackL_', 1, 8), 15, true);
-		this.animations.add('deadRight', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadR_', 1, 12), 5, true);
-		this.animations.add('deadLeft', __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadL_', 1, 12), 5, true);
+	    this.animations.add('walkLeft', Phaser.Animation.generateFrameNames('walkL_', 1, 10), 10, true);
+		this.animations.add('walkRight', Phaser.Animation.generateFrameNames('walkR_', 1, 10), 10, true);
+		this.animations.add('attackRight', Phaser.Animation.generateFrameNames('attackR_', 1, 8), 15, true);
+		this.animations.add('attackLeft', Phaser.Animation.generateFrameNames('attackL_', 1, 8), 15, true);
+		this.animations.add('deadRight', Phaser.Animation.generateFrameNames('deadR_', 1, 12), 5, true);
+		this.animations.add('deadLeft', Phaser.Animation.generateFrameNames('deadL_', 1, 12), 5, true);
 	    this.body.gravity.y = 800;
 	    this.body.bounce.y = 0;// 0.7 + Math.random() * 0.2;
 	    this.body.bounce.x = 1;
@@ -329,9 +307,9 @@ function create() {
 
 	    this.scale.setTo(0.15, 0.15);
 	    game.add.existing(this);
-	};
+	};*/
 
-	Zombies.prototype = Object.create(__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.prototype);
+	/*Zombies.prototype = Object.create(Phaser.Sprite.prototype);
 	Zombies.prototype.constructor = Zombies;
 
 	Zombies.prototype.update = function() {
@@ -371,12 +349,12 @@ function create() {
 
 	for (var i = 0; i < game.world.width/100; i++) {
 		zombie = new Zombies(game, i + 100 * randomInteger(1, 50), 0);
-	}
+	}*/
 
 	//COINS SETTING----------------------------------------------------------------------------------------------------------------------------------
-	Coins = function createStars(game, x, y) {
-		__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x * 70, y, 'coin');
-		game.physics.enable(this, __WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
+	/*Coins = function createStars(game, x, y) {
+		Phaser.Sprite.call(this, game, x * 70, y, 'coin');
+		game.physics.enable(this, Phaser.Physics.ARCADE);
 		this.collideWorldBounds = true;
 	    this.enableBody = true;
 	    this.animations.add('coin');
@@ -391,7 +369,7 @@ function create() {
 		game.add.existing(this);
 	}
 
-	Coins.prototype = Object.create(__WEBPACK_IMPORTED_MODULE_18_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.prototype);
+	Coins.prototype = Object.create(Phaser.Sprite.prototype);
 	Coins.prototype.constructor = Coins;
 
 	Coins.prototype.update = function() {
@@ -409,7 +387,7 @@ function create() {
 
 	for (var i = 0; i < game.world.width/70; i++) {
 		coin = new Coins(game, i, 0);
-	}
+	}*/
 
 	//TEXT SETTING-----------------------------------------------------------------------------------------------------------------------------------
 	scoreText = game.add.text(16, 16, 'Score: 0 rubles', { fontSize: '32px', fill: '#FFF' });
@@ -432,22 +410,16 @@ function update() {
 }
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/bgMain.png";
-
-/***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/explode.png";
+module.exports = __webpack_require__.p + "images/bgMain.png";
 
 /***/ }),
 /* 8 */
@@ -465,71 +437,23 @@ module.exports = __webpack_require__.p + "images/ground.png";
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/star.png";
+module.exports = __webpack_require__.p + "images/dude_sprite.png";
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/dude_sprite.png";
+module.exports = __webpack_require__.p + "images/dude_sprite.json";
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/belarusianCoin_sprite.png";
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/zombieFemale_sprite.png";
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/zombieMale_sprite.png";
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/dude_sprite.json";
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/zombieFemale_sprite.json";
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/zombieMale_sprite.json";
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "sounds/ambientmain.wav";
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "sounds/coin.wav";
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["PIXI"] = __webpack_require__(21);
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["PIXI"] = __webpack_require__(13);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 21 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -8104,14 +8028,14 @@ PIXI.TextureUvs = function()
 }).call(this);
 
 /***/ }),
-/* 22 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["p2"] = __webpack_require__(23);
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["p2"] = __webpack_require__(15);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 23 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;/**
@@ -21754,14 +21678,14 @@ World.prototype.raycast = function(result, ray){
 });
 
 /***/ }),
-/* 24 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Phaser"] = __webpack_require__(25);
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Phaser"] = __webpack_require__(17);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 25 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -108077,10 +108001,10 @@ PIXI.canUseNewCanvasBlendModes = function () {
 * "What matters in this life is not what we do but what we do for others, the legacy we leave and the imprint we make." - Eric Meyer
 */
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
 
 /***/ }),
-/* 26 */
+/* 18 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -108270,4 +108194,4 @@ process.umask = function() { return 0; };
 
 
 /***/ })
-],[4]);
+],[5]);

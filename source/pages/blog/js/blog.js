@@ -3,24 +3,24 @@
 import '../blog.scss';
 
 import '../images/bgMain.png';
-import '../images/explode.png';
+//import '../images/explode.png';
 import '../images/bullet.png';
 import '../images/ground.png';
-import '../images/star.png';
+//import '../images/star.png';
 
 import '../images/dude_sprite.png';
-import '../images/belarusianCoin_sprite.png';
-import '../images/zombieFemale_sprite.png';
-import '../images/zombieMale_sprite.png';
+//import '../images/belarusianCoin_sprite.png';
+//import '../images/zombieFemale_sprite.png';
+//import '../images/zombieMale_sprite.png';
 
 import '../images/dude_sprite.json';
-import '../images/zombieFemale_sprite.json';
-import '../images/zombieMale_sprite.json';
+//import '../images/zombieFemale_sprite.json';
+//import '../images/zombieMale_sprite.json';
 
-import '../sounds/ambientmain.wav';
-import '../sounds/coin.wav';
+//import '../sounds/ambientmain.wav';
+//import '../sounds/coin.wav';
 
-import 'normalize.css';
+//import 'normalize.css';
 
 
 import PIXI from 'expose-loader?PIXI!phaser-ce/build/custom/pixi.js';
@@ -33,13 +33,15 @@ function preload() {
 	game.load.image('sky', '../images/bgMain.png');
 	game.load.image('ground', '../images/ground.png');
 	game.load.image('bullet', '../images/bullet.png');
-	game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
+	//game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
 	game.load.atlas('dude', '../images/dude_sprite.png', '../images/dude_sprite.json');
-	game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
-	game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
-	game.load.spritesheet('explosion', '../images/explode.png', 128, 128);
-	game.load.audio('coinSound', '../sounds/coin.wav');
-	game.load.audio('environment', '../sounds/ambientmain.wav');
+	//game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
+	//game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
+	//game.load.spritesheet('explosion', '../images/explode.png', 128, 128);
+	//game.load.audio('coinSound', '../sounds/coin.wav');
+	//game.load.audio('environment', '../sounds/ambientmain.wav');
+
+
 	// game.load.audio('step', 'sounds/step2.ogg');
 };
 
@@ -65,9 +67,9 @@ function create() {
 	game.add.tileSprite(0, 0, 10000, 600, 'sky');
 	game.world.setBounds(0, 0, 10000, 600);
 
-	environment = game.add.audio('environment');
+	/*environment = game.add.audio('environment');
 	environment.loopFull();
-	environment.play();
+	environment.play();*/
 
 	game.physics.startSystem(Phaser.Physics.ARCADE);
 	cursors = game.input.keyboard.createCursorKeys();
@@ -132,21 +134,16 @@ function create() {
 	    this.weapon.trackSprite(this, 65, 37, true);
 	    this.fireButton = game.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);
 
-	    this.weapon.bulletHit = function bulletExplosion(bullet) {
+	    /*this.weapon.bulletHit = function bulletExplosion(bullet) {
 	    	let explosion = game.add.sprite(bullet.x, bullet.y, 'explosion');
-
-	    	// let explosionSound = game.add.audio("explosionSound");
 
 			explosion.anchor.x = 0.5;
 		    explosion.anchor.y = 0.5;
 			explosion.animations.add('explosion');
 			explosion.animations.play('explosion', 25, false, true);
 
-			// explosionSound.play();
-	    }
+	    }*/
 
-
-		// this.stepSound = game.add.audio('step');
 
 	    game.add.existing(this);
 	};
@@ -230,7 +227,7 @@ function create() {
 	dude = new Player(game, 15, 300);
 
 	//ZOMBIES SETTING----------------------------------------------------------------------------------------------------------------------------------
-	Zombies = function (game, x, y) {
+	/*Zombies = function (game, x, y) {
 
 		if (randomInteger(2, 12) % 2 === 0) {
 			Phaser.Sprite.call(this, game, x, y, 'zombieFemale');
@@ -255,9 +252,9 @@ function create() {
 
 	    this.scale.setTo(0.15, 0.15);
 	    game.add.existing(this);
-	};
+	};*/
 
-	Zombies.prototype = Object.create(Phaser.Sprite.prototype);
+	/*Zombies.prototype = Object.create(Phaser.Sprite.prototype);
 	Zombies.prototype.constructor = Zombies;
 
 	Zombies.prototype.update = function() {
@@ -297,10 +294,10 @@ function create() {
 
 	for (var i = 0; i < game.world.width/100; i++) {
 		zombie = new Zombies(game, i + 100 * randomInteger(1, 50), 0);
-	}
+	}*/
 
 	//COINS SETTING----------------------------------------------------------------------------------------------------------------------------------
-	Coins = function createStars(game, x, y) {
+	/*Coins = function createStars(game, x, y) {
 		Phaser.Sprite.call(this, game, x * 70, y, 'coin');
 		game.physics.enable(this, Phaser.Physics.ARCADE);
 		this.collideWorldBounds = true;
@@ -335,7 +332,7 @@ function create() {
 
 	for (var i = 0; i < game.world.width/70; i++) {
 		coin = new Coins(game, i, 0);
-	}
+	}*/
 
 	//TEXT SETTING-----------------------------------------------------------------------------------------------------------------------------------
 	scoreText = game.add.text(16, 16, 'Score: 0 rubles', { fontSize: '32px', fill: '#FFF' });
