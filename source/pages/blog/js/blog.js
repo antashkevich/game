@@ -37,8 +37,8 @@ function preload() {
 	this.load.atlas('zombieFemale', zombFemale, zombFemaleJson);
 	this.load.atlas('zombieMale', zombMale, zombMaleJson);
 	this.load.spritesheet('explosion', explode, 128, 128);
-	game.load.audio('coinSound', '../sounds/coin.wav');
-	game.load.audio('environment', '../sounds/ambientmain.wav');
+	this.load.audio('coinSound', '../sounds/coin.wav');
+	this.load.audio('environment', '../sounds/ambientmain.wav');
 
 
 	// game.load.audio('step', 'sounds/step2.ogg');
