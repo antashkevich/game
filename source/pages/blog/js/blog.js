@@ -43,7 +43,7 @@ function preload() {
 	// game.load.audio('step', 'sounds/step2.ogg');
 };
 
-let Player;  //class for player
+/*let Player;  //class for player
 let dude;
 
 let Zombies; //class for zombie
@@ -59,21 +59,21 @@ let coin;
 let environment;
 
 let score = 0;
-let scoreText;
+let scoreText;*/
 
 function create() {
-	game.add.tileSprite(0, 0, 10000, 600, 'sky');
-	game.world.setBounds(0, 0, 10000, 600);
+	game.add.tileSprite(0, 0, 1200, 600, 'ground');
+	game.world.setBounds(0, 0, 1200, 600);
 
 	/*environment = game.add.audio('environment');
 	environment.loopFull();
 	environment.play();*/
 
 	game.physics.startSystem(Phaser.Physics.ARCADE);
-	cursors = game.input.keyboard.createCursorKeys();
+	//cursors = game.input.keyboard.createCursorKeys();
 
 	//PLATFORMS SETTING----------------------------------------------------------------------------------------------------------------------------------
-	platforms = game.add.group();
+	/*platforms = game.add.group();
 	platforms.enableBody = true;
 
 	for (var i = 0, j = 0; i < game.world.width/500; i++, j+=500) {	//500 - it is width of ground img
@@ -93,11 +93,11 @@ function create() {
 
 	function randomInteger(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
-	}
+	}*/
 
 
 	//PLAYER SETTING----------------------------------------------------------------------------------------------------------------------------------
-	Player = function (game, x, y) {
+	/*Player = function (game, x, y) {
 		Phaser.Sprite.call(this, game, x, y, 'dude');
 		game.physics.enable(this, Phaser.Physics.ARCADE);
 		game.camera.follow(this);
@@ -130,7 +130,7 @@ function create() {
 	    this.weapon.bulletSpeed = 500;
 	    this.weapon.fireRate = 390;
 	    this.weapon.trackSprite(this, 65, 37, true);
-	    this.fireButton = game.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);
+	    this.fireButton = game.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);*/
 
 	    /*this.weapon.bulletHit = function bulletExplosion(bullet) {
 	    	let explosion = game.add.sprite(bullet.x, bullet.y, 'explosion');
@@ -143,10 +143,10 @@ function create() {
 	    }*/
 
 
-	    game.add.existing(this);
-	};
+	    /*game.add.existing(this);
+	};*/
 
-	Player.prototype = Object.create(Phaser.Sprite.prototype);
+	/*Player.prototype = Object.create(Phaser.Sprite.prototype);
 	Player.prototype.constructor = Player;
 
 	Player.prototype.update = function() {
@@ -222,7 +222,7 @@ function create() {
 
 	};
 
-	dude = new Player(game, 15, 300);
+	dude = new Player(game, 15, 300);*/
 
 	//ZOMBIES SETTING----------------------------------------------------------------------------------------------------------------------------------
 	/*Zombies = function (game, x, y) {
@@ -333,21 +333,21 @@ function create() {
 	}*/
 
 	//TEXT SETTING-----------------------------------------------------------------------------------------------------------------------------------
-	scoreText = game.add.text(16, 16, 'Score: 0 rubles', { fontSize: '32px', fill: '#FFF' });
+	/*scoreText = game.add.text(16, 16, 'Score: 0 rubles', { fontSize: '32px', fill: '#FFF' });*/
 
 
 	//REMOVE CONTEXTMENU (right click on mouse)------------------------------------------------------------------------------------------------------
-	game.canvas.oncontextmenu = function (event) {
+	/*game.canvas.oncontextmenu = function (event) {
 		event.preventDefault (); 
-	}
+	}*/
 
 };
 
 function update() {
-	game.physics.arcade.overlap(dude.weapon.bullets, platforms, bulletHitPlatform);
+	/*game.physics.arcade.overlap(dude.weapon.bullets, platforms, bulletHitPlatform);
 
     function bulletHitPlatform (bullet, platform) {
     	bullet.kill();
     	dude.weapon.bulletHit(bullet);
-    }
+    }*/
 }

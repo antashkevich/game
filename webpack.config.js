@@ -84,14 +84,14 @@ module.exports = {
                 options: {
                   name: 'images/[name].[ext]'
                }
-            },
+            }/*,
             {
                 test: /\.wav$/,
                 loader: 'file-loader',
                 options: {
                   name: 'sounds/[name].[ext]'
                }
-            }
+            }*/
         ],  
         loaders: [
             {

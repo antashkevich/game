@@ -57,8 +57,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-
 //import '../images/explode.png';
 
 
@@ -101,7 +99,7 @@ function preload() {
 	// game.load.audio('step', 'sounds/step2.ogg');
 };
 
-let Player;  //class for player
+/*let Player;  //class for player
 let dude;
 
 let Zombies; //class for zombie
@@ -117,21 +115,21 @@ let coin;
 let environment;
 
 let score = 0;
-let scoreText;
+let scoreText;*/
 
 function create() {
-	game.add.tileSprite(0, 0, 10000, 600, 'sky');
-	game.world.setBounds(0, 0, 10000, 600);
+	game.add.tileSprite(0, 0, 1200, 600, 'ground');
+	game.world.setBounds(0, 0, 1200, 600);
 
 	/*environment = game.add.audio('environment');
 	environment.loopFull();
 	environment.play();*/
 
 	game.physics.startSystem(__WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
-	cursors = game.input.keyboard.createCursorKeys();
+	//cursors = game.input.keyboard.createCursorKeys();
 
 	//PLATFORMS SETTING----------------------------------------------------------------------------------------------------------------------------------
-	platforms = game.add.group();
+	/*platforms = game.add.group();
 	platforms.enableBody = true;
 
 	for (var i = 0, j = 0; i < game.world.width/500; i++, j+=500) {	//500 - it is width of ground img
@@ -151,29 +149,29 @@ function create() {
 
 	function randomInteger(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
-	}
+	}*/
 
 
 	//PLAYER SETTING----------------------------------------------------------------------------------------------------------------------------------
-	Player = function (game, x, y) {
-		__WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x, y, 'dude');
-		game.physics.enable(this, __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
+	/*Player = function (game, x, y) {
+		Phaser.Sprite.call(this, game, x, y, 'dude');
+		game.physics.enable(this, Phaser.Physics.ARCADE);
 		game.camera.follow(this);
 
 		this.collideWorldBounds = true;
 	    this.enableBody = true;
-		this.animations.add('runLeft', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('runL_', 1, 8), 10, true);
-		this.animations.add('runRight', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('runR_', 1, 8), 10, true);
-		this.animations.add('idleRight', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('idleR_', 1, 10), 15, true);
-		this.animations.add('idleLeft', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('idleL_', 1, 10), 15, true);
-		this.animations.add('jumpRight', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('jumpR_', 1, 10), 5, true);
-		this.animations.add('jumpLeft', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('jumpL_', 1, 10), 5, true);
-		this.animations.add('meleeRight', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('meleeR_', 1, 7), 5, true);
-		this.animations.add('meleeLeft', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('meleeL_', 1, 7), 5, true);
-		this.animations.add('shootRight', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('shootR_', 1, 3), 5, true);
-		this.animations.add('shootLeft', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('shootL_', 1, 3), 5, true);
-		this.animations.add('deadRight', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadR_', 1, 10), 5, true);
-		this.animations.add('deadLeft', __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadL_', 1, 10), 5, true);
+		this.animations.add('runLeft', Phaser.Animation.generateFrameNames('runL_', 1, 8), 10, true);
+		this.animations.add('runRight', Phaser.Animation.generateFrameNames('runR_', 1, 8), 10, true);
+		this.animations.add('idleRight', Phaser.Animation.generateFrameNames('idleR_', 1, 10), 15, true);
+		this.animations.add('idleLeft', Phaser.Animation.generateFrameNames('idleL_', 1, 10), 15, true);
+		this.animations.add('jumpRight', Phaser.Animation.generateFrameNames('jumpR_', 1, 10), 5, true);
+		this.animations.add('jumpLeft', Phaser.Animation.generateFrameNames('jumpL_', 1, 10), 5, true);
+		this.animations.add('meleeRight', Phaser.Animation.generateFrameNames('meleeR_', 1, 7), 5, true);
+		this.animations.add('meleeLeft', Phaser.Animation.generateFrameNames('meleeL_', 1, 7), 5, true);
+		this.animations.add('shootRight', Phaser.Animation.generateFrameNames('shootR_', 1, 3), 5, true);
+		this.animations.add('shootLeft', Phaser.Animation.generateFrameNames('shootL_', 1, 3), 5, true);
+		this.animations.add('deadRight', Phaser.Animation.generateFrameNames('deadR_', 1, 10), 5, true);
+		this.animations.add('deadLeft', Phaser.Animation.generateFrameNames('deadL_', 1, 10), 5, true);
 
 		this.body.gravity.y = 300;
 	    this.body.collideWorldBounds = true;
@@ -184,11 +182,11 @@ function create() {
 		this.playerLife = 500;
 
 		this.weapon = game.add.weapon(30, 'bullet');
-	    this.weapon.bulletKillType = __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Weapon.KILL_CAMERA_BOUNDS;
+	    this.weapon.bulletKillType = Phaser.Weapon.KILL_CAMERA_BOUNDS;
 	    this.weapon.bulletSpeed = 500;
 	    this.weapon.fireRate = 390;
 	    this.weapon.trackSprite(this, 65, 37, true);
-	    this.fireButton = game.input.keyboard.addKey(__WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.KeyCode.SPACEBAR);
+	    this.fireButton = game.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);*/
 
 	    /*this.weapon.bulletHit = function bulletExplosion(bullet) {
 	    	let explosion = game.add.sprite(bullet.x, bullet.y, 'explosion');
@@ -201,10 +199,10 @@ function create() {
 	    }*/
 
 
-	    game.add.existing(this);
-	};
+	    /*game.add.existing(this);
+	};*/
 
-	Player.prototype = Object.create(__WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.prototype);
+	/*Player.prototype = Object.create(Phaser.Sprite.prototype);
 	Player.prototype.constructor = Player;
 
 	Player.prototype.update = function() {
@@ -280,7 +278,7 @@ function create() {
 
 	};
 
-	dude = new Player(game, 15, 300);
+	dude = new Player(game, 15, 300);*/
 
 	//ZOMBIES SETTING----------------------------------------------------------------------------------------------------------------------------------
 	/*Zombies = function (game, x, y) {
@@ -391,23 +389,23 @@ function create() {
 	}*/
 
 	//TEXT SETTING-----------------------------------------------------------------------------------------------------------------------------------
-	scoreText = game.add.text(16, 16, 'Score: 0 rubles', { fontSize: '32px', fill: '#FFF' });
+	/*scoreText = game.add.text(16, 16, 'Score: 0 rubles', { fontSize: '32px', fill: '#FFF' });*/
 
 
 	//REMOVE CONTEXTMENU (right click on mouse)------------------------------------------------------------------------------------------------------
-	game.canvas.oncontextmenu = function (event) {
+	/*game.canvas.oncontextmenu = function (event) {
 		event.preventDefault (); 
-	}
+	}*/
 
 };
 
 function update() {
-	game.physics.arcade.overlap(dude.weapon.bullets, platforms, bulletHitPlatform);
+	/*game.physics.arcade.overlap(dude.weapon.bullets, platforms, bulletHitPlatform);
 
     function bulletHitPlatform (bullet, platform) {
     	bullet.kill();
     	dude.weapon.bulletHit(bullet);
-    }
+    }*/
 }
 
 /***/ }),
