@@ -44,16 +44,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blog_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__blog_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_bgMain_png__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_bgMain_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_bgMain_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_bullet_png__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_bullet_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_bullet_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_ground_png__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_ground_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_ground_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_dude_sprite_png__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_dude_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_dude_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_dude_sprite_json__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_dude_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_dude_sprite_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_normalize_css__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_normalize_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_explode_png__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_explode_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_explode_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_bullet_png__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_bullet_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_bullet_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_ground_png__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_ground_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_ground_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_star_png__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_star_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_star_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_dude_sprite_png__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_dude_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__images_dude_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_belarusianCoin_sprite_png__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_belarusianCoin_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__images_belarusianCoin_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_zombieFemale_sprite_png__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_zombieFemale_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__images_zombieFemale_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_zombieMale_sprite_png__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_zombieMale_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__images_zombieMale_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_dude_sprite_json__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_dude_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__images_dude_sprite_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__images_zombieFemale_sprite_json__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__images_zombieFemale_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__images_zombieFemale_sprite_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__images_zombieMale_sprite_json__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__images_zombieMale_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__images_zombieMale_sprite_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__sounds_ambientmain_wav__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__sounds_ambientmain_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__sounds_ambientmain_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sounds_coin_wav__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sounds_coin_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__sounds_coin_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_normalize_css__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_normalize_css__);
 
 
 
@@ -61,22 +79,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-//import '../images/explode.png';
 
 
-//import '../images/star.png';
 
 
-//import '../images/belarusianCoin_sprite.png';
-//import '../images/zombieFemale_sprite.png';
-//import '../images/zombieMale_sprite.png';
 
 
-//import '../images/zombieFemale_sprite.json';
-//import '../images/zombieMale_sprite.json';
 
-//import '../sounds/ambientmain.wav';
-//import '../sounds/coin.wav';
+
+
+
+
+
+
+
+
+
 
 
 
@@ -85,21 +103,22 @@ const game = new __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_buil
 
 function preload() {
 	this.load.image('sky', __WEBPACK_IMPORTED_MODULE_4__images_bgMain_png___default.a);
-	this.load.image('ground', __WEBPACK_IMPORTED_MODULE_6__images_ground_png___default.a);
-	this.load.image('bullet', __WEBPACK_IMPORTED_MODULE_5__images_bullet_png___default.a);
-	//game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
-	this.load.atlas('dude', __WEBPACK_IMPORTED_MODULE_7__images_dude_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_8__images_dude_sprite_json___default.a);
-	//game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
-	//game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
-	//game.load.spritesheet('explosion', '../images/explode.png', 128, 128);
-	//game.load.audio('coinSound', '../sounds/coin.wav');
-	//game.load.audio('environment', '../sounds/ambientmain.wav');
+	this.load.image('ground', __WEBPACK_IMPORTED_MODULE_7__images_ground_png___default.a);
+	this.load.image('bullet', __WEBPACK_IMPORTED_MODULE_6__images_bullet_png___default.a);
+	this.load.image('star', __WEBPACK_IMPORTED_MODULE_8__images_star_png___default.a);
+	this.load.spritesheet('coin', __WEBPACK_IMPORTED_MODULE_10__images_belarusianCoin_sprite_png___default.a, 68, 68);
+	this.load.atlas('dude', __WEBPACK_IMPORTED_MODULE_9__images_dude_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_13__images_dude_sprite_json___default.a);
+	this.load.atlas('zombieFemale', __WEBPACK_IMPORTED_MODULE_11__images_zombieFemale_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_14__images_zombieFemale_sprite_json___default.a);
+	this.load.atlas('zombieMale', __WEBPACK_IMPORTED_MODULE_12__images_zombieMale_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_15__images_zombieMale_sprite_json___default.a);
+	this.load.spritesheet('explosion', __WEBPACK_IMPORTED_MODULE_5__images_explode_png___default.a, 128, 128);
+	game.load.audio('coinSound', '../sounds/coin.wav');
+	game.load.audio('environment', '../sounds/ambientmain.wav');
 
 
 	// game.load.audio('step', 'sounds/step2.ogg');
 };
 
-/*let Player;  //class for player
+let Player;  //class for player
 let dude;
 
 let Zombies; //class for zombie
@@ -115,21 +134,21 @@ let coin;
 let environment;
 
 let score = 0;
-let scoreText;*/
+let scoreText;
 
 function create() {
-	game.add.tileSprite(0, 0, 1200, 600, 'ground');
+	game.add.tileSprite(0, 0, 1200, 600, 'star');
 	game.world.setBounds(0, 0, 1200, 600);
 
-	/*environment = game.add.audio('environment');
+	environment = game.add.audio('environment');
 	environment.loopFull();
-	environment.play();*/
+	environment.play();
 
 	game.physics.startSystem(__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
-	//cursors = game.input.keyboard.createCursorKeys();
+	cursors = game.input.keyboard.createCursorKeys();
 
 	//PLATFORMS SETTING----------------------------------------------------------------------------------------------------------------------------------
-	/*platforms = game.add.group();
+	platforms = game.add.group();
 	platforms.enableBody = true;
 
 	for (var i = 0, j = 0; i < game.world.width/500; i++, j+=500) {	//500 - it is width of ground img
@@ -149,29 +168,29 @@ function create() {
 
 	function randomInteger(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
-	}*/
+	}
 
 
 	//PLAYER SETTING----------------------------------------------------------------------------------------------------------------------------------
-	/*Player = function (game, x, y) {
-		Phaser.Sprite.call(this, game, x, y, 'dude');
-		game.physics.enable(this, Phaser.Physics.ARCADE);
+	Player = function (game, x, y) {
+		__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x, y, 'dude');
+		game.physics.enable(this, __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
 		game.camera.follow(this);
 
 		this.collideWorldBounds = true;
 	    this.enableBody = true;
-		this.animations.add('runLeft', Phaser.Animation.generateFrameNames('runL_', 1, 8), 10, true);
-		this.animations.add('runRight', Phaser.Animation.generateFrameNames('runR_', 1, 8), 10, true);
-		this.animations.add('idleRight', Phaser.Animation.generateFrameNames('idleR_', 1, 10), 15, true);
-		this.animations.add('idleLeft', Phaser.Animation.generateFrameNames('idleL_', 1, 10), 15, true);
-		this.animations.add('jumpRight', Phaser.Animation.generateFrameNames('jumpR_', 1, 10), 5, true);
-		this.animations.add('jumpLeft', Phaser.Animation.generateFrameNames('jumpL_', 1, 10), 5, true);
-		this.animations.add('meleeRight', Phaser.Animation.generateFrameNames('meleeR_', 1, 7), 5, true);
-		this.animations.add('meleeLeft', Phaser.Animation.generateFrameNames('meleeL_', 1, 7), 5, true);
-		this.animations.add('shootRight', Phaser.Animation.generateFrameNames('shootR_', 1, 3), 5, true);
-		this.animations.add('shootLeft', Phaser.Animation.generateFrameNames('shootL_', 1, 3), 5, true);
-		this.animations.add('deadRight', Phaser.Animation.generateFrameNames('deadR_', 1, 10), 5, true);
-		this.animations.add('deadLeft', Phaser.Animation.generateFrameNames('deadL_', 1, 10), 5, true);
+		this.animations.add('runLeft', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('runL_', 1, 8), 10, true);
+		this.animations.add('runRight', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('runR_', 1, 8), 10, true);
+		this.animations.add('idleRight', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('idleR_', 1, 10), 15, true);
+		this.animations.add('idleLeft', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('idleL_', 1, 10), 15, true);
+		this.animations.add('jumpRight', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('jumpR_', 1, 10), 5, true);
+		this.animations.add('jumpLeft', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('jumpL_', 1, 10), 5, true);
+		this.animations.add('meleeRight', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('meleeR_', 1, 7), 5, true);
+		this.animations.add('meleeLeft', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('meleeL_', 1, 7), 5, true);
+		this.animations.add('shootRight', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('shootR_', 1, 3), 5, true);
+		this.animations.add('shootLeft', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('shootL_', 1, 3), 5, true);
+		this.animations.add('deadRight', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadR_', 1, 10), 5, true);
+		this.animations.add('deadLeft', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadL_', 1, 10), 5, true);
 
 		this.body.gravity.y = 300;
 	    this.body.collideWorldBounds = true;
@@ -182,13 +201,13 @@ function create() {
 		this.playerLife = 500;
 
 		this.weapon = game.add.weapon(30, 'bullet');
-	    this.weapon.bulletKillType = Phaser.Weapon.KILL_CAMERA_BOUNDS;
+	    this.weapon.bulletKillType = __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Weapon.KILL_CAMERA_BOUNDS;
 	    this.weapon.bulletSpeed = 500;
 	    this.weapon.fireRate = 390;
 	    this.weapon.trackSprite(this, 65, 37, true);
-	    this.fireButton = game.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);*/
+	    this.fireButton = game.input.keyboard.addKey(__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.KeyCode.SPACEBAR);
 
-	    /*this.weapon.bulletHit = function bulletExplosion(bullet) {
+	    this.weapon.bulletHit = function bulletExplosion(bullet) {
 	    	let explosion = game.add.sprite(bullet.x, bullet.y, 'explosion');
 
 			explosion.anchor.x = 0.5;
@@ -196,13 +215,13 @@ function create() {
 			explosion.animations.add('explosion');
 			explosion.animations.play('explosion', 25, false, true);
 
-	    }*/
+	    }
 
 
-	    /*game.add.existing(this);
-	};*/
+	    game.add.existing(this);
+	};
 
-	/*Player.prototype = Object.create(Phaser.Sprite.prototype);
+	Player.prototype = Object.create(__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.prototype);
 	Player.prototype.constructor = Player;
 
 	Player.prototype.update = function() {
@@ -278,26 +297,26 @@ function create() {
 
 	};
 
-	dude = new Player(game, 15, 300);*/
+	dude = new Player(game, 15, 300);
 
 	//ZOMBIES SETTING----------------------------------------------------------------------------------------------------------------------------------
-	/*Zombies = function (game, x, y) {
+	Zombies = function (game, x, y) {
 
 		if (randomInteger(2, 12) % 2 === 0) {
-			Phaser.Sprite.call(this, game, x, y, 'zombieFemale');
+			__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x, y, 'zombieFemale');
 		} else {
-			Phaser.Sprite.call(this, game, x, y, 'zombieMale');
+			__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x, y, 'zombieMale');
 		}
 
-		game.physics.enable(this, Phaser.Physics.ARCADE);
+		game.physics.enable(this, __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
 		this.collideWorldBounds = true;
 	    this.enableBody = true;
-	    this.animations.add('walkLeft', Phaser.Animation.generateFrameNames('walkL_', 1, 10), 10, true);
-		this.animations.add('walkRight', Phaser.Animation.generateFrameNames('walkR_', 1, 10), 10, true);
-		this.animations.add('attackRight', Phaser.Animation.generateFrameNames('attackR_', 1, 8), 15, true);
-		this.animations.add('attackLeft', Phaser.Animation.generateFrameNames('attackL_', 1, 8), 15, true);
-		this.animations.add('deadRight', Phaser.Animation.generateFrameNames('deadR_', 1, 12), 5, true);
-		this.animations.add('deadLeft', Phaser.Animation.generateFrameNames('deadL_', 1, 12), 5, true);
+	    this.animations.add('walkLeft', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('walkL_', 1, 10), 10, true);
+		this.animations.add('walkRight', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('walkR_', 1, 10), 10, true);
+		this.animations.add('attackRight', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('attackR_', 1, 8), 15, true);
+		this.animations.add('attackLeft', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('attackL_', 1, 8), 15, true);
+		this.animations.add('deadRight', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadR_', 1, 12), 5, true);
+		this.animations.add('deadLeft', __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Animation.generateFrameNames('deadL_', 1, 12), 5, true);
 	    this.body.gravity.y = 800;
 	    this.body.bounce.y = 0;// 0.7 + Math.random() * 0.2;
 	    this.body.bounce.x = 1;
@@ -306,9 +325,9 @@ function create() {
 
 	    this.scale.setTo(0.15, 0.15);
 	    game.add.existing(this);
-	};*/
+	};
 
-	/*Zombies.prototype = Object.create(Phaser.Sprite.prototype);
+	Zombies.prototype = Object.create(__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.prototype);
 	Zombies.prototype.constructor = Zombies;
 
 	Zombies.prototype.update = function() {
@@ -348,12 +367,12 @@ function create() {
 
 	for (var i = 0; i < game.world.width/100; i++) {
 		zombie = new Zombies(game, i + 100 * randomInteger(1, 50), 0);
-	}*/
+	}
 
 	//COINS SETTING----------------------------------------------------------------------------------------------------------------------------------
-	/*Coins = function createStars(game, x, y) {
-		Phaser.Sprite.call(this, game, x * 70, y, 'coin');
-		game.physics.enable(this, Phaser.Physics.ARCADE);
+	Coins = function createStars(game, x, y) {
+		__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.call(this, game, x * 70, y, 'coin');
+		game.physics.enable(this, __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
 		this.collideWorldBounds = true;
 	    this.enableBody = true;
 	    this.animations.add('coin');
@@ -368,7 +387,7 @@ function create() {
 		game.add.existing(this);
 	}
 
-	Coins.prototype = Object.create(Phaser.Sprite.prototype);
+	Coins.prototype = Object.create(__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Sprite.prototype);
 	Coins.prototype.constructor = Coins;
 
 	Coins.prototype.update = function() {
@@ -386,26 +405,26 @@ function create() {
 
 	for (var i = 0; i < game.world.width/70; i++) {
 		coin = new Coins(game, i, 0);
-	}*/
+	}
 
 	//TEXT SETTING-----------------------------------------------------------------------------------------------------------------------------------
-	/*scoreText = game.add.text(16, 16, 'Score: 0 rubles', { fontSize: '32px', fill: '#FFF' });*/
+	scoreText = game.add.text(16, 16, 'Score: 0 rubles', { fontSize: '32px', fill: '#FFF' });
 
 
 	//REMOVE CONTEXTMENU (right click on mouse)------------------------------------------------------------------------------------------------------
-	/*game.canvas.oncontextmenu = function (event) {
+	game.canvas.oncontextmenu = function (event) {
 		event.preventDefault (); 
-	}*/
+	}
 
 };
 
 function update() {
-	/*game.physics.arcade.overlap(dude.weapon.bullets, platforms, bulletHitPlatform);
+	game.physics.arcade.overlap(dude.weapon.bullets, platforms, bulletHitPlatform);
 
     function bulletHitPlatform (bullet, platform) {
     	bullet.kill();
     	dude.weapon.bulletHit(bullet);
-    }*/
+    }
 }
 
 /***/ }),
@@ -108172,25 +108191,79 @@ module.exports = __webpack_require__.p + "images/bgMain.png";
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/bullet.png";
+module.exports = __webpack_require__.p + "images/explode.png";
 
 /***/ }),
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/ground.png";
+module.exports = __webpack_require__.p + "images/bullet.png";
 
 /***/ }),
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/dude_sprite.png";
+module.exports = __webpack_require__.p + "images/ground.png";
 
 /***/ }),
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "images/star.png";
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/dude_sprite.png";
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/belarusianCoin_sprite.png";
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/zombieFemale_sprite.png";
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/zombieMale_sprite.png";
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
 module.exports = __webpack_require__.p + "images/dude_sprite.json";
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/zombieFemale_sprite.json";
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/zombieMale_sprite.json";
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "sounds/ambientmain.wav";
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "sounds/coin.wav";
 
 /***/ })
 ],[4]);
