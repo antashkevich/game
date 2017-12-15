@@ -63,7 +63,7 @@ let score = 0;
 let scoreText;
 
 function create() {
-	game.add.tileSprite(0, 0, 1200, 600, 'star');
+	game.add.tileSprite(0, 0, 1200, 600, 'sky');
 	game.world.setBounds(0, 0, 1200, 600);
 
 	environment = game.add.audio('environment');
