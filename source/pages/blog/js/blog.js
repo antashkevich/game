@@ -20,7 +20,7 @@ import '../images/dude_sprite.json';
 //import '../sounds/ambientmain.wav';
 //import '../sounds/coin.wav';
 
-//import 'normalize.css';
+import 'normalize.css';
 
 
 import PIXI from 'expose-loader?PIXI!phaser-ce/build/custom/pixi.js';
