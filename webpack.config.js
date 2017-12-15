@@ -10,8 +10,8 @@ const PATHS = {
 
 module.exports = {
     entry: {
-        'index': PATHS.source + '/pages/index/index.js',
-        'blog': PATHS.source + '/pages/blog/js/blog.js'
+        'index': PATHS.source + '/pages/landing/index.js',
+        'game': PATHS.source + '/pages/game/js/game.js'
     },
     output: {
         path: PATHS.build,
@@ -21,17 +21,23 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             chunks: ['index','common'],
-            template: PATHS.source + '/pages/index/index.pug'
+            template: PATHS.source + '/pages/landing/index.pug'
         }),
         new HtmlWebpackPlugin({
-            filename: 'blog.html',
-            chunks: ['blog','common'],
-            template: PATHS.source + '/pages/blog/blog.pug'
+            filename: 'game.html',
+            chunks: ['game','common'],
+            template: PATHS.source + '/pages/game/game.pug'
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common',
         }),
-        new ExtractTextPlugin('./css/[name].css')
+        new ExtractTextPlugin('./css/[name].css'),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            "window.jQuery": 'jquery',
+            "windows.jQuery": 'jquery',
+        })
     ],
     module: {
         rules: [
@@ -83,7 +89,20 @@ module.exports = {
             {
                 test: /\.json$/,
                 loader: 'json-loader'
-            }
+            }/*,
+            {
+                test: /\.(jpe?g|png|gif)$/,
+                exclude: /(node_modules)/,
+                loader: 'url-loader?limit=10000'
+            }, 
+            {
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: "url-loader?limit=10000&minetype=application/font-woff"
+            }, 
+            {
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: "file-loader"
+            }*/
         ]        
     },
     devServer: {
