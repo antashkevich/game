@@ -111,8 +111,8 @@ function preload() {
 	this.load.atlas('zombieFemale', __WEBPACK_IMPORTED_MODULE_11__images_zombieFemale_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_14__images_zombieFemale_sprite_json___default.a);
 	this.load.atlas('zombieMale', __WEBPACK_IMPORTED_MODULE_12__images_zombieMale_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_15__images_zombieMale_sprite_json___default.a);
 	this.load.spritesheet('explosion', __WEBPACK_IMPORTED_MODULE_5__images_explode_png___default.a, 128, 128);
-	this.load.audio('coinSound', '../sounds/coin.wav');
-	this.load.audio('environment', '../sounds/ambientmain.wav');
+	this.load.audio('coinSound', __WEBPACK_IMPORTED_MODULE_17__sounds_coin_wav___default.a);
+	this.load.audio('environment', __WEBPACK_IMPORTED_MODULE_16__sounds_ambientmain_wav___default.a);
 
 
 	// game.load.audio('step', 'sounds/step2.ogg');

@@ -19,8 +19,8 @@ import dudeSpriteJson from '../images/dude_sprite.json';
 import zombFemaleJson from '../images/zombieFemale_sprite.json';
 import zombMaleJson from '../images/zombieMale_sprite.json';
 
-import '../sounds/ambientmain.wav';
-import '../sounds/coin.wav';
+import ambient from '../sounds/ambientmain.wav';
+import coinS from '../sounds/coin.wav';
 
 import 'normalize.css';
 
@@ -37,8 +37,8 @@ function preload() {
 	this.load.atlas('zombieFemale', zombFemale, zombFemaleJson);
 	this.load.atlas('zombieMale', zombMale, zombMaleJson);
 	this.load.spritesheet('explosion', explode, 128, 128);
-	this.load.audio('coinSound', '../sounds/coin.wav');
-	this.load.audio('environment', '../sounds/ambientmain.wav');
+	this.load.audio('coinSound', coinS);
+	this.load.audio('environment', ambient);
 
 
 	// game.load.audio('step', 'sounds/step2.ogg');
