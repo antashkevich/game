@@ -84,11 +84,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 const game = new __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Game(1200, 600, __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.AUTO, '', { preload: preload, create: create, update: update});
 
 function preload() {
-	game.load.image('sky', '../images/bgMain.png');
-	game.load.image('ground', '../images/ground.png');
-	game.load.image('bullet', '../images/bullet.png');
+	this.load.image('sky', '../images/bgMain.png');
+	this.load.image('ground', '../images/ground.png');
+	this.load.image('bullet', '../images/bullet.png');
 	//game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
-	game.load.atlas('dude', '../images/dude_sprite.png', '../images/dude_sprite.json');
+	this.load.atlas('dude', '../thisthis/dude_sprite.png', '../images/dude_sprite.json');
 	//game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
 	//game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
 	//game.load.spritesheet('explosion', '../images/explode.png', 128, 128);
@@ -118,14 +118,14 @@ let score = 0;
 let scoreText;*/
 
 function create() {
-	game.add.tileSprite(0, 0, 1200, 600, 'ground');
-	game.world.setBounds(0, 0, 1200, 600);
+	this.add.tileSprite(0, 0, 1200, 600, 'ground');
+	this.world.setBounds(0, 0, 1200, 600);
 
 	/*environment = game.add.audio('environment');
 	environment.loopFull();
 	environment.play();*/
 
-	game.physics.startSystem(__WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
+	this.physics.startSystem(__WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
 	//cursors = game.input.keyboard.createCursorKeys();
 
 	//PLATFORMS SETTING----------------------------------------------------------------------------------------------------------------------------------
