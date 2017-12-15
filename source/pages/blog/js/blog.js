@@ -1,3 +1,7 @@
+import PIXI from 'expose-loader?PIXI!phaser-ce/build/custom/pixi.js';
+import p2 from 'expose-loader?p2!phaser-ce/build/custom/p2.js';
+import Phaser from 'expose-loader?Phaser!phaser-ce/build/custom/phaser-split.js';
+
 import '../blog.scss';
 
 import '../images/bgMain.png';
@@ -21,18 +25,14 @@ import '../images/dude_sprite.json';
 import 'normalize.css';
 
 
-import PIXI from 'expose-loader?PIXI!phaser-ce/build/custom/pixi.js';
-import p2 from 'expose-loader?p2!phaser-ce/build/custom/p2.js';
-import Phaser from 'expose-loader?Phaser!phaser-ce/build/custom/phaser-split.js';
-
 const game = new Phaser.Game(1200, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update});
 
 function preload() {
-	this.load.image('sky', '../images/bgMain.png');
-	this.load.image('ground', '../images/ground.png');
-	this.load.image('bullet', '../images/bullet.png');
+	game.load.image('sky', '../images/bgMain.png');
+	game.load.image('ground', '../images/ground.png');
+	game.load.image('bullet', '../images/bullet.png');
 	//game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
-	this.load.atlas('dude', '../thisthis/dude_sprite.png', '../images/dude_sprite.json');
+	game.load.atlas('dude', '../images/dude_sprite.png', '../images/dude_sprite.json');
 	//game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
 	//game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
 	//game.load.spritesheet('explosion', '../images/explode.png', 128, 128);
@@ -62,14 +62,14 @@ let score = 0;
 let scoreText;*/
 
 function create() {
-	this.add.tileSprite(0, 0, 1200, 600, 'ground');
-	this.world.setBounds(0, 0, 1200, 600);
+	game.add.tileSprite(0, 0, 1200, 600, 'ground');
+	game.world.setBounds(0, 0, 1200, 600);
 
 	/*environment = game.add.audio('environment');
 	environment.loopFull();
 	environment.play();*/
 
-	this.physics.startSystem(Phaser.Physics.ARCADE);
+	game.physics.startSystem(Phaser.Physics.ARCADE);
 	//cursors = game.input.keyboard.createCursorKeys();
 
 	//PLATFORMS SETTING----------------------------------------------------------------------------------------------------------------------------------

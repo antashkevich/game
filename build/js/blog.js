@@ -34,26 +34,30 @@ module.exports = g;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blog_scss__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blog_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__blog_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_bgMain_png__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__images_bgMain_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__images_bgMain_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_bullet_png__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_bullet_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_bullet_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_ground_png__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_ground_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_ground_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_dude_sprite_png__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_dude_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_dude_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_dude_sprite_json__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_dude_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_dude_sprite_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_normalize_css__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_normalize_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_expose_loader_PIXI_phaser_ce_build_custom_pixi_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_expose_loader_PIXI_phaser_ce_build_custom_pixi_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_expose_loader_PIXI_phaser_ce_build_custom_pixi_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_expose_loader_p2_phaser_ce_build_custom_p2_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_expose_loader_p2_phaser_ce_build_custom_p2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_expose_loader_p2_phaser_ce_build_custom_p2_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_expose_loader_PIXI_phaser_ce_build_custom_pixi_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_expose_loader_PIXI_phaser_ce_build_custom_pixi_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_expose_loader_PIXI_phaser_ce_build_custom_pixi_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_expose_loader_p2_phaser_ce_build_custom_p2_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_expose_loader_p2_phaser_ce_build_custom_p2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_expose_loader_p2_phaser_ce_build_custom_p2_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blog_scss__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blog_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__blog_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_bgMain_png__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_bgMain_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_bgMain_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_bullet_png__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_bullet_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_bullet_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_ground_png__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_ground_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_ground_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_dude_sprite_png__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_dude_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_dude_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_dude_sprite_json__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_dude_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_dude_sprite_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_normalize_css__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_normalize_css__);
+
+
+
+
 
 
 
@@ -77,18 +81,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-
-
-
-const game = new __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Game(1200, 600, __WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.AUTO, '', { preload: preload, create: create, update: update});
+const game = new __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Game(1200, 600, __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.AUTO, '', { preload: preload, create: create, update: update});
 
 function preload() {
-	this.load.image('sky', '../images/bgMain.png');
-	this.load.image('ground', '../images/ground.png');
-	this.load.image('bullet', '../images/bullet.png');
+	game.load.image('sky', '../images/bgMain.png');
+	game.load.image('ground', '../images/ground.png');
+	game.load.image('bullet', '../images/bullet.png');
 	//game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
-	this.load.atlas('dude', '../thisthis/dude_sprite.png', '../images/dude_sprite.json');
+	game.load.atlas('dude', '../images/dude_sprite.png', '../images/dude_sprite.json');
 	//game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
 	//game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
 	//game.load.spritesheet('explosion', '../images/explode.png', 128, 128);
@@ -118,14 +118,14 @@ let score = 0;
 let scoreText;*/
 
 function create() {
-	this.add.tileSprite(0, 0, 1200, 600, 'ground');
-	this.world.setBounds(0, 0, 1200, 600);
+	game.add.tileSprite(0, 0, 1200, 600, 'ground');
+	game.world.setBounds(0, 0, 1200, 600);
 
 	/*environment = game.add.audio('environment');
 	environment.loopFull();
 	environment.play();*/
 
-	this.physics.startSystem(__WEBPACK_IMPORTED_MODULE_9_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
+	game.physics.startSystem(__WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Physics.ARCADE);
 	//cursors = game.input.keyboard.createCursorKeys();
 
 	//PLATFORMS SETTING----------------------------------------------------------------------------------------------------------------------------------
@@ -410,49 +410,13 @@ function update() {
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/bgMain.png";
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/bullet.png";
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/ground.png";
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/dude_sprite.png";
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/dude_sprite.json";
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["PIXI"] = __webpack_require__(12);
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["PIXI"] = __webpack_require__(6);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -8027,14 +7991,14 @@ PIXI.TextureUvs = function()
 }).call(this);
 
 /***/ }),
-/* 13 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["p2"] = __webpack_require__(14);
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["p2"] = __webpack_require__(8);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var require;var require;/**
@@ -21677,14 +21641,14 @@ World.prototype.raycast = function(result, ray){
 });
 
 /***/ }),
-/* 15 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Phaser"] = __webpack_require__(16);
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["Phaser"] = __webpack_require__(10);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -108000,10 +107964,10 @@ PIXI.canUseNewCanvasBlendModes = function () {
 * "What matters in this life is not what we do but what we do for others, the legacy we leave and the imprint we make." - Eric Meyer
 */
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11)))
 
 /***/ }),
-/* 17 */
+/* 11 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -108191,6 +108155,42 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/bgMain.png";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/bullet.png";
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/ground.png";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/dude_sprite.png";
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/dude_sprite.json";
 
 /***/ })
 ],[4]);
