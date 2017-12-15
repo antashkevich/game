@@ -4,18 +4,18 @@ import Phaser from 'expose-loader?Phaser!phaser-ce/build/custom/phaser-split.js'
 
 import '../blog.scss';
 
-import '../images/bgMain.png';
+import bgMain from '../images/bgMain.png';
 //import '../images/explode.png';
-import '../images/bullet.png';
-import '../images/ground.png';
+import bullet from '../images/bullet.png';
+import ground from '../images/ground.png';
 //import '../images/star.png';
 
-import '../images/dude_sprite.png';
+import dudeSprite from '../images/dude_sprite.png';
 //import '../images/belarusianCoin_sprite.png';
 //import '../images/zombieFemale_sprite.png';
 //import '../images/zombieMale_sprite.png';
 
-import '../images/dude_sprite.json';
+import dudeSpriteJson from '../images/dude_sprite.json';
 //import '../images/zombieFemale_sprite.json';
 //import '../images/zombieMale_sprite.json';
 
@@ -28,11 +28,11 @@ import 'normalize.css';
 const game = new Phaser.Game(1200, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update});
 
 function preload() {
-	game.load.image('sky', '../images/bgMain.png');
-	game.load.image('ground', '../images/ground.png');
-	game.load.image('bullet', '../images/bullet.png');
+	this.load.image('sky', bgMain);
+	this.load.image('ground', ground);
+	this.load.image('bullet', bullet);
 	//game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
-	game.load.atlas('dude', '../images/dude_sprite.png', '../images/dude_sprite.json');
+	this.load.atlas('dude', dudeSprite, dudeSpriteJson);
 	//game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
 	//game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
 	//game.load.spritesheet('explosion', '../images/explode.png', 128, 128);

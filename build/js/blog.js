@@ -84,11 +84,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 const game = new __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Game(1200, 600, __WEBPACK_IMPORTED_MODULE_2_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.AUTO, '', { preload: preload, create: create, update: update});
 
 function preload() {
-	game.load.image('sky', '../images/bgMain.png');
-	game.load.image('ground', '../images/ground.png');
-	game.load.image('bullet', '../images/bullet.png');
+	this.load.image('sky', __WEBPACK_IMPORTED_MODULE_4__images_bgMain_png___default.a);
+	this.load.image('ground', __WEBPACK_IMPORTED_MODULE_6__images_ground_png___default.a);
+	this.load.image('bullet', __WEBPACK_IMPORTED_MODULE_5__images_bullet_png___default.a);
 	//game.load.spritesheet('coin', '../images/belarusianCoin_sprite.png', 68, 68);
-	game.load.atlas('dude', '../images/dude_sprite.png', '../images/dude_sprite.json');
+	this.load.atlas('dude', __WEBPACK_IMPORTED_MODULE_7__images_dude_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_8__images_dude_sprite_json___default.a);
 	//game.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
 	//game.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
 	//game.load.spritesheet('explosion', '../images/explode.png', 128, 128);
