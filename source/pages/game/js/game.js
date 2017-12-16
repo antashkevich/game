@@ -22,7 +22,7 @@ import zombMaleJson from '../images/zombieMale_sprite.json';
 import ambient from '../sounds/ambientmain.wav';
 import coinS from '../sounds/coin.wav';
 
-import 'normalize.css';
+//import 'normalize.css';
 
 
 const game = new Phaser.Game(1200, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update});
