@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-//const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 
 const PATHS = {
@@ -12,10 +11,8 @@ const PATHS = {
 
 module.exports = {
     entry: {
-        //'tether',
-        //'font-awesome/scss/font-awesome.scss',
         'index': PATHS.source + '/pages/landing/index.js',
-        'game': PATHS.source + '/pages/game/js/game.js'
+        'game': PATHS.source + '/pages/game/js/index.js'
     },
     output: {
         path: PATHS.build,
@@ -82,26 +79,6 @@ module.exports = {
                     publicPath: '../',
                     fallback: 'style-loader',
                     use: ['css-loader', 'autoprefixer-loader', 'sass-loader'],
-                    /*use: [
-                        {
-                          loader: 'css-loader', // translates CSS into CommonJS modules
-                        }, 
-                        {
-                          loader: 'postcss-loader', // Run post css actions
-                          options: {
-                            plugins() {
-                              // post css plugins, can be exported to postcss.config.js
-                              return [
-                                precss,
-                                autoprefixer
-                              ];
-                            }
-                          }
-                        }, 
-                        {
-                          loader: 'sass-loader' // compiles SASS to CSS
-                        }
-                    ]*/
                 }),
             },
             {

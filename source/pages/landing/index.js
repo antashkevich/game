@@ -1,4 +1,4 @@
-//import './index.scss';	
+import './index.scss';	
 //import 'normalize.css';
 //import $ from 'jquery';
 
@@ -8,6 +8,3 @@
 import '../../../node_modules/popper.js/dist/popper.min.js';
 import '../../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import $ from 'jquery';
-
-import './index.scss';
-
