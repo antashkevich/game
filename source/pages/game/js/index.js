@@ -1,3 +1,5 @@
+import '../game.scss';
+
 import PIXI from 'expose-loader?PIXI!phaser-ce/build/custom/pixi.js';
 import p2 from 'expose-loader?p2!phaser-ce/build/custom/p2.js';
 import Phaser from 'expose-loader?Phaser!phaser-ce/build/custom/phaser-split.js';
@@ -80,7 +82,6 @@ const game = new Phaser.Game(1200, 600, Phaser.AUTO, '', { preload: preload, cre
 function preload() {
 	this.load.image('loading', splash);
 
-
 	this.load.image('sky', bgMain);
 	this.load.image('ground2', groundIcon2);
 	this.load.image('ground4', groundIcon4);
@@ -132,8 +133,6 @@ function preload() {
 	this.load.audio('pistol', pistolS);
 	this.load.audio('churchBell', churchBellS);
 	this.load.audio('rockBreak', rockBreakS);
-
-
 }
 
 let pauseGame;
@@ -144,17 +143,23 @@ let musicPlay = true;
 let sound;
 let soundPlay = true;
 
+let Player;  //class for player
 let dude;
+
+let Man;  //class for player
 let man;
 
+let Zombies; //class for zombie
 let zombie;
 
 let platforms;
 let dangerousObstacles;
 let simpleBox;
 
+let Controls;
 let cursors;
 
+let Coins;  //class for coins
 let coin1;
 let coin2;
 let coin050;
@@ -199,300 +204,292 @@ function create() {
 
 	let platformCoordinateY = game.world.height - 40;
 
-	function buildGround(platformCoordinateY) {
-		let ground = platforms.create(0, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(480, platformCoordinateY, 'ground6');
-			ground.body.immovable = true;
-			ground = platforms.create(900, platformCoordinateY, 'ground6');
-			ground.body.immovable = true;
-			ground = platforms.create(1860, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(2160, platformCoordinateY, 'ground5');
-			ground.body.immovable = true;
-			ground = platforms.create(2580, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(2880, platformCoordinateY, 'ground6');
-			ground.body.immovable = true;
-			ground = platforms.create(3480, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(3780, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(4080, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(5340, platformCoordinateY, 'ground6');
-			ground.body.immovable = true;
-			ground = platforms.create(5760, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(6060, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(6540, platformCoordinateY, 'ground6');
-			ground.body.immovable = true;
-			ground = platforms.create(6960, platformCoordinateY, 'ground6');
-			ground.body.immovable = true;
-			ground = platforms.create(7380, platformCoordinateY, 'ground5');
-			ground.body.immovable = true;
-			ground = platforms.create(7800, platformCoordinateY, 'ground2');
-			ground.body.immovable = true;
-			ground = platforms.create(7980, platformCoordinateY, 'ground6');
-			ground.body.immovable = true;
-			ground = platforms.create(8400, platformCoordinateY, 'ground6');
-			ground.body.immovable = true;
-			ground = platforms.create(9180, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(9480, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-			ground = platforms.create(10560, platformCoordinateY, 'ground5');
-			ground.body.immovable = true;
-			ground = platforms.create(10920, platformCoordinateY, 'ground4');
-			ground.body.immovable = true;
-	}
-	function buildPlatform() {
-		let ironBox = platforms.create(60, 360, 'ironBox2');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(300, 480, 'ironBox2');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(360, 180, 'ironBox4');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(600, 360, 'ironBox2');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(840, 240, 'ironBox3');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(1200, 180, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(1440, 300, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(1620, 300, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(1620, 420, 'ironBox2');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(1800, 500, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(1860, 240, 'ironBox4');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(2280, 300, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(2460, 420, 'ironBox3');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(2580, 180, 'ironBox4');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(3000, 180, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(3240, 300, 'ironBox3');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(3600, 240, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(3840, 300, 'ironBox4');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(4260, 240, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(4440, 480, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(4500, 240, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(4620, 480, 'ironBox4');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(4740, 180, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(4980, 240, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(5040, 500, 'ironBox3');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(5220, 260, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(5400, 420, 'ironBox2');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(5460, 180, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(5640, 300, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(5880, 240, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(6120, 180, 'ironBox4');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(6360, 500, 'ironBox2');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(6600, 360, 'ironBox3');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(6900, 240, 'ironBox4');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(7320, 240, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(7560, 300, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(7740, 180, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(7860, 420, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(7980, 300, 'ironBox4');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(8400, 240, 'ironBox2');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(8640, 180, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(8820, 300, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(8820, 500, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(9000, 380, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(9180, 240, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(9420, 180, 'ironBox4');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(9840, 180, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(10080, 180, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(10200, 360, 'ironBox2');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(10560, 300, 'ironBox1');
-			ironBox.body.immovable = true;
-			ironBox = platforms.create(10920, 450, 'ironBox1');
-			ironBox.body.immovable = true;
-			// ironBox = platforms.create(10980, 300, 'ironBox1');
-			// ironBox.body.immovable = true;
-			ironBox = platforms.create(11040, 360, 'ironBox3');
-			ironBox.body.immovable = true;
-	}
+	let ground = platforms.create(0, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(480, platformCoordinateY, 'ground6');
+		ground.body.immovable = true;
+		ground = platforms.create(900, platformCoordinateY, 'ground6');
+		ground.body.immovable = true;
+		ground = platforms.create(1860, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(2160, platformCoordinateY, 'ground5');
+		ground.body.immovable = true;
+		ground = platforms.create(2580, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(2880, platformCoordinateY, 'ground6');
+		ground.body.immovable = true;
+		ground = platforms.create(3480, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(3780, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(4080, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(5340, platformCoordinateY, 'ground6');
+		ground.body.immovable = true;
+		ground = platforms.create(5760, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(6060, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(6540, platformCoordinateY, 'ground6');
+		ground.body.immovable = true;
+		ground = platforms.create(6960, platformCoordinateY, 'ground6');
+		ground.body.immovable = true;
+		ground = platforms.create(7380, platformCoordinateY, 'ground5');
+		ground.body.immovable = true;
+		ground = platforms.create(7800, platformCoordinateY, 'ground2');
+		ground.body.immovable = true;
+		ground = platforms.create(7980, platformCoordinateY, 'ground6');
+		ground.body.immovable = true;
+		ground = platforms.create(8400, platformCoordinateY, 'ground6');
+		ground.body.immovable = true;
+		ground = platforms.create(9180, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(9480, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+		ground = platforms.create(10560, platformCoordinateY, 'ground5');
+		ground.body.immovable = true;
+		ground = platforms.create(10920, platformCoordinateY, 'ground4');
+		ground.body.immovable = true;
+
+
+	let ironBox = platforms.create(60, 360, 'ironBox2');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(300, 480, 'ironBox2');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(360, 180, 'ironBox4');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(600, 360, 'ironBox2');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(840, 240, 'ironBox3');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(1200, 180, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(1440, 300, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(1620, 300, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(1620, 420, 'ironBox2');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(1800, 500, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(1860, 240, 'ironBox4');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(2280, 300, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(2460, 420, 'ironBox3');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(2580, 180, 'ironBox4');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(3000, 180, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(3240, 300, 'ironBox3');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(3600, 240, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(3840, 300, 'ironBox4');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(4260, 240, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(4440, 480, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(4500, 240, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(4620, 480, 'ironBox4');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(4740, 180, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(4980, 240, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(5040, 500, 'ironBox3');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(5220, 260, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(5400, 420, 'ironBox2');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(5460, 180, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(5640, 300, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(5880, 240, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(6120, 180, 'ironBox4');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(6360, 500, 'ironBox2');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(6600, 360, 'ironBox3');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(6900, 240, 'ironBox4');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(7320, 240, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(7560, 300, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(7740, 180, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(7860, 420, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(7980, 300, 'ironBox4');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(8400, 240, 'ironBox2');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(8640, 180, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(8820, 300, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(8820, 500, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(9000, 380, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(9180, 240, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(9420, 180, 'ironBox4');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(9840, 180, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(10080, 180, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(10200, 360, 'ironBox2');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(10560, 300, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(10920, 450, 'ironBox1');
+		ironBox.body.immovable = true;
+		ironBox = platforms.create(11040, 360, 'ironBox3');
+		ironBox.body.immovable = true;
 
 	let dangerousObstaclesCoordinateY = game.world.height - 33;
 
-	function buildDangerousObstacles(dangerousObstaclesCoordinateY) {
-		let acid = dangerousObstacles.create(240, dangerousObstaclesCoordinateY, 'acid');
-			acid.body.immovable = true;
-			acid = dangerousObstacles.create(4320, dangerousObstaclesCoordinateY, 'acid');
-			acid.body.immovable = true;
-			acid = dangerousObstacles.create(4560, dangerousObstaclesCoordinateY, 'acid');
-			acid.body.immovable = true;
-			acid = dangerousObstacles.create(4800, dangerousObstaclesCoordinateY, 'acid');
-			acid.body.immovable = true;
-			acid = dangerousObstacles.create(5040, dangerousObstaclesCoordinateY, 'acid');
-			acid.body.immovable = true;
-			acid = dangerousObstacles.create(8760, dangerousObstaclesCoordinateY, 'acid');
-			acid.body.immovable = true;
 
-		let lava = dangerousObstacles.create(1320, dangerousObstaclesCoordinateY, 'lava');
-			lava.body.immovable = true;
-			lava = dangerousObstacles.create(1560, dangerousObstaclesCoordinateY, 'lava');
-			lava.body.immovable = true;
-			lava = dangerousObstacles.create(6300, dangerousObstaclesCoordinateY, 'lava');
-			lava.body.immovable = true;
+	let acid = dangerousObstacles.create(240, dangerousObstaclesCoordinateY, 'acid');
+		acid.body.immovable = true;
+		acid = dangerousObstacles.create(4320, dangerousObstaclesCoordinateY, 'acid');
+		acid.body.immovable = true;
+		acid = dangerousObstacles.create(4560, dangerousObstaclesCoordinateY, 'acid');
+		acid.body.immovable = true;
+		acid = dangerousObstacles.create(4800, dangerousObstaclesCoordinateY, 'acid');
+		acid.body.immovable = true;
+		acid = dangerousObstacles.create(5040, dangerousObstaclesCoordinateY, 'acid');
+		acid.body.immovable = true;
+		acid = dangerousObstacles.create(8760, dangerousObstaclesCoordinateY, 'acid');
+		acid.body.immovable = true;
 
-		let frozenFlame = dangerousObstacles.create(2460, dangerousObstaclesCoordinateY, 'frozenFlame');
-			frozenFlame.body.immovable = true;
-			frozenFlame = dangerousObstacles.create(7680, dangerousObstaclesCoordinateY, 'frozenFlame');
-			frozenFlame.body.immovable = true;
+	let lava = dangerousObstacles.create(1320, dangerousObstaclesCoordinateY, 'lava');
+		lava.body.immovable = true;
+		lava = dangerousObstacles.create(1560, dangerousObstaclesCoordinateY, 'lava');
+		lava.body.immovable = true;
+		lava = dangerousObstacles.create(6300, dangerousObstaclesCoordinateY, 'lava');
+		lava.body.immovable = true;
 
-		let acidLava = dangerousObstacles.create(3240, dangerousObstaclesCoordinateY, 'acidLava');
-			acidLava.body.immovable = true;
-			acidLava = dangerousObstacles.create(9720, dangerousObstaclesCoordinateY, 'acidLava');
-			acidLava.body.immovable = true;
-			acidLava = dangerousObstacles.create(9960, dangerousObstaclesCoordinateY, 'acidLava');
-			acidLava.body.immovable = true;
-			acidLava = dangerousObstacles.create(10200, dangerousObstaclesCoordinateY, 'acidLava');
-			acidLava.body.immovable = true;
-	}
-	
-	function buildSimpleBox() {
-		let woodenBox1 = simpleBox.create(840, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(1260, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(1260, 440, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(1260, 500, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(1260, 560, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(1620, 360, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(1800, 560, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(1800, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(2100, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(2820, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(3720, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(4020, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(5220, 500, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(5280, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(5280, 560, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(5700, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(6000, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(6900, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(7320, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(7920, 560, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(7920, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(8340, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(9060, 500, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(9060, 560, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(9060, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(9120, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(9120, 560, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(9420, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(10500, 560, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(10500, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(10860, 620, 'box1');
-			woodenBox1.body.immovable = true;
-			woodenBox1 = simpleBox.create(11160, 620, 'box1');
-			woodenBox1.body.immovable = true;
+	let frozenFlame = dangerousObstacles.create(2460, dangerousObstaclesCoordinateY, 'frozenFlame');
+		frozenFlame.body.immovable = true;
+		frozenFlame = dangerousObstacles.create(7680, dangerousObstaclesCoordinateY, 'frozenFlame');
+		frozenFlame.body.immovable = true;
 
-		let woodenBox2 = simpleBox.create(5220, 320, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(5220, 380, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(5220, 440, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(7740, 0, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(7740, 60, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(7740, 120, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(9000, 440, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(9000, 500, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(9000, 560, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(9000, 620, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(10440, 440, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(10440, 500, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(10440, 560, 'box2');
-			woodenBox2.body.immovable = true;
-			woodenBox2 = simpleBox.create(10440, 620, 'box2');
-			woodenBox2.body.immovable = true;
-	}
+	let acidLava = dangerousObstacles.create(3240, dangerousObstaclesCoordinateY, 'acidLava');
+		acidLava.body.immovable = true;
+		acidLava = dangerousObstacles.create(9720, dangerousObstaclesCoordinateY, 'acidLava');
+		acidLava.body.immovable = true;
+		acidLava = dangerousObstacles.create(9960, dangerousObstaclesCoordinateY, 'acidLava');
+		acidLava.body.immovable = true;
+		acidLava = dangerousObstacles.create(10200, dangerousObstaclesCoordinateY, 'acidLava');
+		acidLava.body.immovable = true;
+
+
+	let woodenBox1 = simpleBox.create(840, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(1260, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(1260, 440, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(1260, 500, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(1260, 560, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(1620, 360, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(1800, 560, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(1800, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(2100, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(2820, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(3720, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(4020, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(5220, 500, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(5280, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(5280, 560, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(5700, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(6000, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(6900, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(7320, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(7920, 560, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(7920, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(8340, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(9060, 500, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(9060, 560, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(9060, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(9120, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(9120, 560, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(9420, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(10500, 560, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(10500, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(10860, 620, 'box1');
+		woodenBox1.body.immovable = true;
+		woodenBox1 = simpleBox.create(11160, 620, 'box1');
+		woodenBox1.body.immovable = true;
+
+	let woodenBox2 = simpleBox.create(5220, 320, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(5220, 380, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(5220, 440, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(7740, 0, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(7740, 60, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(7740, 120, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(9000, 440, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(9000, 500, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(9000, 560, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(9000, 620, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(10440, 440, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(10440, 500, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(10440, 560, 'box2');
+		woodenBox2.body.immovable = true;
+		woodenBox2 = simpleBox.create(10440, 620, 'box2');
+		woodenBox2.body.immovable = true;
 
 //CONTROLS SETTING----------------------------------------------------------------------------------------------------------------------------------
-	let Controls; //class for controls
-
 	Controls = function (game, x, y, sprite) {
 		Phaser.Sprite.call(this, game, x, y, sprite);
 
@@ -507,6 +504,7 @@ function create() {
 
 	Controls.prototype = Object.create(Phaser.Sprite.prototype);
 	Controls.prototype.constructor = Controls;
+
 	playGame = new Controls(game, game.width, 0, 'playGame');
 	playGame.events.onInputDown.add(function () {
 		game.paused = false;
@@ -546,9 +544,7 @@ function create() {
 	}, this);
 	
 //PLAYER SETTING----------------------------------------------------------------------------------------------------------------------------------
-	let Player;  //class for player
-
-Player = function (game, x, y) {
+	Player = function (game, x, y) {
 		Phaser.Sprite.call(this, game, x, y, 'dude');
 		game.physics.enable(this, Phaser.Physics.ARCADE);
 		game.camera.follow(this);
@@ -735,12 +731,12 @@ Player = function (game, x, y) {
 		}
 
 	};
+
+
 	dude = new Player(game, 20, 500);
 
 //MAN SETTING----------------------------------------------------------------------------------------------------------------------------------
-	let Man;  //class for player
-
-Man = function (game, x, y) {
+	/*Man = function (game, x, y) {
 	Phaser.Sprite.call(this, game, x, y, 'man');
 	game.physics.enable(this, Phaser.Physics.ARCADE);
 
@@ -787,16 +783,12 @@ Man.prototype.update = function() {
 		this.playerLife = 0;
 	}
 };
-	man = new Man(game, 11100, 250);
+
+
+	man = new Man(game, 11100, 250);*/
 
 //ZOMBIES SETTING----------------------------------------------------------------------------------------------------------------------------------
-function randomInteger(min, max) {
-	return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-	let Zombies; //class for zombie
-
-Zombies = function (game, x, y) {
+	Zombies = function (game, x, y) {
 
 		if (randomInteger(2, 12) % 2 === 0) {
 			Phaser.Sprite.call(this, game, x, y, 'zombieFemale');
@@ -873,6 +865,8 @@ Zombies = function (game, x, y) {
 	    	zombie.kill();
 	    }
 	};
+
+
 	zombie = new Zombies(game, 60, 250);
 	zombie = new Zombies(game, 300, 370);
 	zombie = new Zombies(game, 360, 80);
@@ -940,9 +934,7 @@ Zombies = function (game, x, y) {
 	zombie = new Zombies(game, 11040, 440);
 
 //COINS SETTING----------------------------------------------------------------------------------------------------------------------------------
-let Coins;  //class for coins
-
-Coins = function createCoins(game, x, y, sprite, type) {
+	Coins = function createCoins(game, x, y, sprite, type) {
 		Phaser.Sprite.call(this, game, x, y, sprite);
 		game.physics.enable(this, Phaser.Physics.ARCADE);
 		this.collideWorldBounds = true;
@@ -1009,6 +1001,7 @@ Coins = function createCoins(game, x, y, sprite, type) {
 			scoreText.text = 'Score: ' + score;
 		}
 	};
+
 	let partOfCoins = [game, 840, 380, 'coin01', 1, 4, 3]; // arr = [game, x, y, sprite, type, verticalCount, horizontalCount]
 	coin01 = new Coins(partOfCoins[0], partOfCoins[1], partOfCoins[2], partOfCoins[3], partOfCoins[4]);
 	coin01.createCoin(partOfCoins);
@@ -1067,4 +1060,8 @@ Coins = function createCoins(game, x, y, sprite, type) {
 function update() {
 
 
+}
+
+function randomInteger(min, max) {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
 }

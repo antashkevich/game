@@ -116,36 +116,17 @@ module.exports = {
                   name: 'sounds/[name].[ext]'
                }
             },
-
-
-            /*{
-                test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                use: 'url-loader?limit=10000',
-              },
-              {
-                test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-                use: 'file-loader',
-              },
-              {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                use: [
-                  'file-loader?name=images/[name].[ext]',
-                  'image-webpack-loader?bypassOnDebug'
-                ]
-              },
-              // font-awesome
-              {
-                test: /font-awesome\.config\.js/,
-                use: [
-                  { loader: 'style-loader' },
-                  { loader: 'font-awesome-loader' }
-                ]
-              },*/
-
+            {
+                test: /\.(TTF|ttf|eot|woff|woff2)$/,
+                loader: "file-loader",
+                options: {
+                    name: "fonts/[name].[ext]",
+                }
+            },
               // Bootstrap 4
-              {
+             {
                 test: /bootstrap\/dist\/js\/umd\//, use: 'imports-loader?jQuery=jquery'
-              }
+            }
 
 
         ],  
@@ -153,20 +134,7 @@ module.exports = {
             {
                 test: /\.json$/,
                 loader: 'json-loader'
-            },
-            /*{
-                test: /\.(jpe?g|png|gif)$/,
-                exclude: /(node_modules)/,
-                loader: 'url-loader?limit=10000'
-            }, 
-            {
-                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "url-loader?limit=10000&minetype=application/font-woff"
-            }, 
-            {
-                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "file-loader"
-            }*/
+            }
         ]        
     },
     devServer: {
