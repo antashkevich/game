@@ -4,17 +4,6 @@ import PIXI from 'expose-loader?PIXI!phaser-ce/build/custom/pixi.js';
 import p2 from 'expose-loader?p2!phaser-ce/build/custom/p2.js';
 import Phaser from 'expose-loader?Phaser!phaser-ce/build/custom/phaser-split.js';
 
-/*import buildDangerousObstacles from '../js/buildDangerousObstacles.js';
-import buildGround from '../js/buildGround.js';
-import buildPlatform from '../js/buildPlatform.js';
-import buildSimpleBox from '../js/buildSimpleBox.js';
-import Coins from '../js/Coins.js';
-import Controls from '../js/Controls.js';
-import Man from '../js/Man.js';
-import Player from '../js/Player.js';
-import usefulFunctions from '../js/usefulFunctions.js';
-import Zombies from '../js/Zombies.js';*/
-
 import splash from '../images/splashScreen.png';
 import bgMain from '../images/bgMain.png';
 import explode from '../images/explode.png';
@@ -38,9 +27,9 @@ import pauseIcon from '../images/pause.png';
 import musicIcon from '../images/music.png';
 import soundIcon from '../images/sound.png';
 import playIcon from '../images/play.png';
+import manIcon from '../images/man.png';
 
 import dudeSprite from '../images/dude_sprite.png';
-import manSprite from '../images/man_sprite.png';
 import zombMale from '../images/zombieMale_sprite.png';
 import zombFemale from '../images/zombieFemale_sprite.png';
 import coin1Sprite from '../images/belarusianCoin1_sprite.png';
@@ -55,7 +44,6 @@ import coin01Sprite from '../images/belarusianCoin01_sprite.png';
 import explodeIcon from '../images/explode.png';
 
 import dudeSpriteJson from '../images/dude_sprite.json';
-import manSpriteJson from '../images/man_sprite.png';
 import zombFemaleJson from '../images/zombieFemale_sprite.json';
 import zombMaleJson from '../images/zombieMale_sprite.json';
 
@@ -103,9 +91,9 @@ function preload() {
 	this.load.image('playGame', playIcon);
 	this.load.image('music', musicIcon);
 	this.load.image('sound', soundIcon);
+	this.load.image('man', manIcon);
 
 	this.load.atlas('dude', dudeSprite, dudeSpriteJson);
-	this.load.atlas('man', manSprite, dudeSpriteJson);
 	this.load.atlas('zombieFemale', zombFemale, zombFemaleJson);
 	this.load.atlas('zombieMale', zombMale, zombMaleJson);
 
@@ -736,56 +724,11 @@ function create() {
 	dude = new Player(game, 20, 500);
 
 //MAN SETTING----------------------------------------------------------------------------------------------------------------------------------
-	/*Man = function (game, x, y) {
-	Phaser.Sprite.call(this, game, x, y, 'man');
-	game.physics.enable(this, Phaser.Physics.ARCADE);
-
-
-	this.collideWorldBounds = true;
-	this.enableBody = true;
-	this.animations.add('idle', Phaser.Animation.generateFrameNames('man_', 1, 10), 10, true);
-
-	this.body.gravity.y = 500;
-	this.body.collideWorldBounds = true;
-
-	this.scale.setTo(0.15, 0.15);
-
-	game.add.existing(this);
-};
-
-Man.prototype = Object.create(Phaser.Sprite.prototype);
-Man.prototype.constructor = Man;
-
-Man.prototype.update = function() {
-	game.physics.arcade.collide(this, platforms);
-	this.animations.play('idle');
-
-	game.physics.arcade.collide(this, dude, levelComplete, null, this);
-
-	function levelComplete (man, girl) {
-
-		let levelCompleteText = game.add.text(game.width * 0.5, game.height * 0.5, 'Level complete!\nYour score is ' + score, { fontSize: '100px', fill: 'yellow' });
-		levelCompleteText.anchor.set(0.5, 0.5);
-		levelCompleteText.fixedToCamera = true;
-
-		game.paused = true;
-
-		restartGame = new Controls(game, game.width * 0.5, game.height * 0.5, 'restartGame');
-		restartGame.events.onInputDown.add(function () {
-			location.reload();
-		}, this);
-
-		restartGame.anchor.set(0.5, 1.7);
-		restartGame.scale.setTo(2, 2);
-	}
-
-	function hitDangerousObstacles (player, dangerousObstacles) {
-		this.playerLife = 0;
-	}
-};
-
-
-	man = new Man(game, 11100, 250);*/
+	man = game.add.sprite(11100, 290, 'man');
+	game.physics.enable(man, Phaser.Physics.ARCADE);
+	man.collideWorldBounds = true;
+	man.enableBody = true;
+	man.scale.setTo(0.15, 0.15);
 
 //ZOMBIES SETTING----------------------------------------------------------------------------------------------------------------------------------
 	Zombies = function (game, x, y) {
@@ -1058,7 +1001,23 @@ Man.prototype.update = function() {
 }
 
 function update() {
+	game.physics.arcade.overlap(dude, man, levelComplete, null, this);
 
+	function levelComplete (girl, man) {
+		let levelCompleteText = game.add.text(game.width * 0.5, game.height * 0.5, 'Level complete!\nYour score is ' + score, { fontSize: '100px', fill: 'yellow' });
+		levelCompleteText.anchor.set(0.5, 0.5);
+		levelCompleteText.fixedToCamera = true;
+
+		game.paused = true;
+
+		restartGame = new Controls(game, game.width * 0.5, game.height * 0.5, 'restartGame');
+		restartGame.events.onInputDown.add(function () {
+			location.reload();
+		}, this);
+
+		restartGame.anchor.set(0.5, 1.7);
+		restartGame.scale.setTo(2, 2);
+	}
 
 }
 
