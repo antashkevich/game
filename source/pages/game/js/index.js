@@ -4,123 +4,64 @@ import PIXI from 'expose-loader?PIXI!phaser-ce/build/custom/pixi.js';
 import p2 from 'expose-loader?p2!phaser-ce/build/custom/p2.js';
 import Phaser from 'expose-loader?Phaser!phaser-ce/build/custom/phaser-split.js';
 
-import splash from '../images/splashScreen.png';
-import bgMain from '../images/bgMain.png';
-import explode from '../images/explode.png';
-import bulletIcon from '../images/bullet.png';
-import groundIcon2 from '../images/ground2.png';
-import groundIcon4 from '../images/ground4.png';
-import groundIcon5 from '../images/ground5.png';
-import groundIcon6 from '../images/ground6.png';
-import ironBoxIcon1 from '../images/ironBox1.png';
-import ironBoxIcon2 from '../images/ironBox2.png';
-import ironBoxIcon3 from '../images/ironBox3.png';
-import ronBoxIcon4 from '../images/ironBox4.png';
-import woodenBoxIcon from '../images/woodenBox.png';
-import woodenBoxIcon2 from '../images/woodenBox2.png';
-import acidIcon from '../images/acid.png';
-import lavaIcon from '../images/lava.png';
-import acidLavaIcon from '../images/acidLava.png';
-import frozenFlameIcon from '../images/frozenFlame.png';
-import restartIcon from '../images/restart.png';
-import pauseIcon from '../images/pause.png';
-import musicIcon from '../images/music.png';
-import soundIcon from '../images/sound.png';
-import playIcon from '../images/play.png';
-import manIcon from '../images/man.png';
-
-import dudeSprite from '../images/dude_sprite.png';
-import zombMale from '../images/zombieMale_sprite.png';
-import zombFemale from '../images/zombieFemale_sprite.png';
-import coin1Sprite from '../images/belarusianCoin1_sprite.png';
-import coin2Sprite from '../images/belarusianCoin2_sprite.png';
-import coin050Sprite from '../images/belarusianCoin050_sprite.png';
-import coin020Sprite from '../images/belarusianCoin020_sprite.png';
-import coin010Sprite from '../images/belarusianCoin010_sprite.png';
-import coin05Sprite from '../images/belarusianCoin05_sprite.png';
-import coin02Sprite from '../images/belarusianCoin02_sprite.png';
-import coin01Sprite from '../images/belarusianCoin01_sprite.png';
-
-import explodeIcon from '../images/explode.png';
-
-import dudeSpriteJson from '../images/dude_sprite.json';
-import zombFemaleJson from '../images/zombieFemale_sprite.json';
-import zombMaleJson from '../images/zombieMale_sprite.json';
-
-import rockBreakS from '../sounds/rockBreak.wav';
-import churchBellS from '../sounds/churchBell.wav';
-import pistolS from '../sounds/pistol.wav';
-import zombieDeadS7 from '../sounds/zombieDead7.wav';
-import zombieDeadS6 from '../sounds/zombieDead6.wav';
-import zombieDeadS5 from '../sounds/zombieDead5.wav';
-import zombieDeadS4 from '../sounds/zombieDead4.wav';
-import zombieDeadS3 from '../sounds/zombieDead3.wav';
-import zombieDeadS2 from '../sounds/zombieDead2.wav';
-import zombieDeadS1 from '../sounds/zombieDead1.wav';
-import ambient from '../sounds/ambientmain.wav';
-import coinS from '../sounds/coin.wav';
-
-
-
 'use strict';
 
 const game = new Phaser.Game(1200, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 
-
 function preload() {
-	this.load.image('loading', splash);
+	this.load.image('loading', '../images/splashScreen.png');
 
-	this.load.image('sky', bgMain);
-	this.load.image('ground2', groundIcon2);
-	this.load.image('ground4', groundIcon4);
-	this.load.image('ground5', groundIcon5);
-	this.load.image('ground6', groundIcon6);
-	this.load.image('ironBox1', ironBoxIcon1);
-	this.load.image('ironBox2', ironBoxIcon2);
-	this.load.image('ironBox3', ironBoxIcon3);
-	this.load.image('ironBox4', ronBoxIcon4);
-	this.load.image('box1', woodenBoxIcon);
-	this.load.image('box2', woodenBoxIcon2);
-	this.load.image('acid', acidIcon);
-	this.load.image('lava', lavaIcon);
-	this.load.image('acidLava', acidLavaIcon);
-	this.load.image('frozenFlame', frozenFlameIcon);
-	this.load.image('bullet', bulletIcon);
-	this.load.image('restartGame', restartIcon);
-	this.load.image('pauseGame', pauseIcon);
-	this.load.image('playGame', playIcon);
-	this.load.image('music', musicIcon);
-	this.load.image('sound', soundIcon);
-	this.load.image('man', manIcon);
+	this.load.image('sky', '../images/bgMain.png');
+	this.load.image('ground2', '../images/ground2.png');
+	this.load.image('ground4', '../images/ground4.png');
+	this.load.image('ground5', '../images/ground5.png');
+	this.load.image('ground6', '../images/ground6.png');
+	this.load.image('ironBox1', '../images/ironBox1.png');
+	this.load.image('ironBox2', '../images/ironBox2.png');
+	this.load.image('ironBox3', '../images/ironBox3.png');
+	this.load.image('ironBox4', '../images/ironBox4.png');
+	this.load.image('box1', '../images/woodenBox.png');
+	this.load.image('box2', '../images/woodenBox2.png');
+	this.load.image('acid', '../images/acid.png');
+	this.load.image('lava', '../images/lava.png');
+	this.load.image('acidLava', '../images/acidLava.png');
+	this.load.image('frozenFlame', '../images/frozenFlame.png');
+	this.load.image('bullet', '../images/bullet.png');
+	this.load.image('restartGame', '../images/restart.png');
+	this.load.image('pauseGame', '../images/pause.png');
+	this.load.image('playGame', '../images/play.png');
+	this.load.image('music', '../images/music.png');
+	this.load.image('sound', '../images/sound.png');
+	this.load.image('man', '../images/man.png');
 
-	this.load.atlas('dude', dudeSprite, dudeSpriteJson);
-	this.load.atlas('zombieFemale', zombFemale, zombFemaleJson);
-	this.load.atlas('zombieMale', zombMale, zombMaleJson);
+	this.load.atlas('dude', '../images/dude_sprite.png', '../images/dude_sprite.json');
+	this.load.atlas('zombieFemale', '../images/zombieFemale_sprite.png', '../images/zombieFemale_sprite.json');
+	this.load.atlas('zombieMale', '../images/zombieMale_sprite.png', '../images/zombieMale_sprite.json');
 
-	this.load.spritesheet('coin1', coin1Sprite, 68, 68);
-	this.load.spritesheet('coin2', coin2Sprite, 68, 68);
-	this.load.spritesheet('coin050', coin050Sprite, 68, 68);
-	this.load.spritesheet('coin020', coin020Sprite, 68, 68);
-	this.load.spritesheet('coin010', coin010Sprite, 68, 68);
-	this.load.spritesheet('coin05', coin05Sprite, 68, 68);
-	this.load.spritesheet('coin02', coin02Sprite, 68, 68);
-	this.load.spritesheet('coin01', coin01Sprite, 68, 68);
+	this.load.spritesheet('coin1', '../images/belarusianCoin1_sprite.png', 68, 68);
+	this.load.spritesheet('coin2', '../images/belarusianCoin2_sprite.png', 68, 68);
+	this.load.spritesheet('coin050', '../images/belarusianCoin050_sprite.png', 68, 68);
+	this.load.spritesheet('coin020', '../images/belarusianCoin020_sprite.png', 68, 68);
+	this.load.spritesheet('coin010', '../images/belarusianCoin010_sprite.png', 68, 68);
+	this.load.spritesheet('coin05', '../images/belarusianCoin05_sprite.png', 68, 68);
+	this.load.spritesheet('coin02', '../images/belarusianCoin02_sprite.png', 68, 68);
+	this.load.spritesheet('coin01', '../images/belarusianCoin01_sprite.png', 68, 68);
 
-	this.load.spritesheet('explosion', explodeIcon, 128, 128);
+	this.load.spritesheet('explosion', '../images/explode.png', 128, 128);
 
-	this.load.audio('coinSound', coinS);
-	this.load.audio('environment', ambient);
-	this.load.audio('zombieDead1', zombieDeadS1);
-	this.load.audio('zombieDead2', zombieDeadS2);
-	this.load.audio('zombieDead3', zombieDeadS3);
-	this.load.audio('zombieDead4', zombieDeadS4);
-	this.load.audio('zombieDead5', zombieDeadS5);
-	this.load.audio('zombieDead6', zombieDeadS6);
-	this.load.audio('zombieDead7', zombieDeadS7);
+	this.load.audio('coinSound', '../sounds/coin.wav');
+	this.load.audio('environment', '../sounds/ambientmain.wav');
+	this.load.audio('zombieDead1', '../sounds/zombieDead1.wav');
+	this.load.audio('zombieDead2', '../sounds/zombieDead2.wav');
+	this.load.audio('zombieDead3', '../sounds/zombieDead3.wav');
+	this.load.audio('zombieDead4', '../sounds/zombieDead4.wav');
+	this.load.audio('zombieDead5', '../sounds/zombieDead5.wav');
+	this.load.audio('zombieDead6', '../sounds/zombieDead6.wav');
+	this.load.audio('zombieDead7', '../sounds/zombieDead7.wav');
 
-	this.load.audio('pistol', pistolS);
-	this.load.audio('churchBell', churchBellS);
-	this.load.audio('rockBreak', rockBreakS);
+	this.load.audio('pistol', '../sounds/pistol.wav');
+	this.load.audio('churchBell', '../sounds/churchBell.wav');
+	this.load.audio('rockBreak', '../sounds/rockBreak.wav');
 }
 
 let pauseGame;
@@ -180,7 +121,7 @@ function create() {
 	game.physics.startSystem(Phaser.Physics.ARCADE);
 	cursors = game.input.keyboard.createCursorKeys();
 
-//PLATFORMS SETTING----------------------------------------------------------------------------------------------------------------------------------
+	//PLATFORMS SETTING----------------------------------------------------------------------------------------------------------------------------------
 	platforms = game.add.group();
 	platforms.enableBody = true;
 
@@ -477,7 +418,7 @@ function create() {
 		woodenBox2 = simpleBox.create(10440, 620, 'box2');
 		woodenBox2.body.immovable = true;
 
-//CONTROLS SETTING----------------------------------------------------------------------------------------------------------------------------------
+	//CONTROLS SETTING----------------------------------------------------------------------------------------------------------------------------------
 	Controls = function (game, x, y, sprite) {
 		Phaser.Sprite.call(this, game, x, y, sprite);
 
@@ -531,7 +472,7 @@ function create() {
 			
 	}, this);
 	
-//PLAYER SETTING----------------------------------------------------------------------------------------------------------------------------------
+	//PLAYER SETTING----------------------------------------------------------------------------------------------------------------------------------
 	Player = function (game, x, y) {
 		Phaser.Sprite.call(this, game, x, y, 'dude');
 		game.physics.enable(this, Phaser.Physics.ARCADE);
@@ -723,14 +664,14 @@ function create() {
 
 	dude = new Player(game, 20, 500);
 
-//MAN SETTING----------------------------------------------------------------------------------------------------------------------------------
+	//MAN SETTING----------------------------------------------------------------------------------------------------------------------------------
 	man = game.add.sprite(11100, 290, 'man');
 	game.physics.enable(man, Phaser.Physics.ARCADE);
 	man.collideWorldBounds = true;
 	man.enableBody = true;
 	man.scale.setTo(0.15, 0.15);
 
-//ZOMBIES SETTING----------------------------------------------------------------------------------------------------------------------------------
+	//ZOMBIES SETTING----------------------------------------------------------------------------------------------------------------------------------
 	Zombies = function (game, x, y) {
 
 		if (randomInteger(2, 12) % 2 === 0) {
@@ -876,7 +817,7 @@ function create() {
 	zombie = new Zombies(game, 10560, 440);
 	zombie = new Zombies(game, 11040, 440);
 
-//COINS SETTING----------------------------------------------------------------------------------------------------------------------------------
+	//COINS SETTING----------------------------------------------------------------------------------------------------------------------------------
 	Coins = function createCoins(game, x, y, sprite, type) {
 		Phaser.Sprite.call(this, game, x, y, sprite);
 		game.physics.enable(this, Phaser.Physics.ARCADE);
@@ -889,13 +830,9 @@ function create() {
 	    this.spriteName = sprite;
 	    this.type = type;
 	    this.animations.add(this.spriteName);
-		// this.body.gravity.y = 300;
-		// this.body.bounce.y = 0.7 + Math.random() * 0.2;
 	    this.scale.setTo(0.7, 0.7);
 
 	   	this.coinSound = game.add.audio("coinSound");
-		// this.anchor.x = 0.5;
-		// this.anchor.y = 0.5;
 
 		this.type = type;
 
@@ -989,11 +926,11 @@ function create() {
 	coin1 = new Coins(partOfCoins[0], partOfCoins[1], partOfCoins[2], partOfCoins[3], partOfCoins[4]);
 	coin1.createCoin(partOfCoins);
 
-//TEXT SETTING-----------------------------------------------------------------------------------------------------------------------------------
+	//TEXT SETTING-----------------------------------------------------------------------------------------------------------------------------------
 	scoreText = game.add.text(16, 16, 'Score: 0', { fontSize: '32px', fill: 'yellow' });
 	scoreText.fixedToCamera = true;
 
-//REMOVE CONTEXTMENU (right click on mouse)------------------------------------------------------------------------------------------------------
+	//REMOVE CONTEXTMENU (right click on mouse)------------------------------------------------------------------------------------------------------
 	game.canvas.oncontextmenu = function (event) {
 		event.preventDefault (); 
 	}

@@ -29,31 +29,12 @@ module.exports = {
             chunks: ['game'],
             template: PATHS.source + '/pages/game/game.pug'
         }),
-       /* new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
-        }),*/
         new ExtractTextPlugin('./css/[name].css'),
-
-        /*new TransferWebpackPlugin([
-          { from: './css' },
-        ]),*/
-        new webpack.ProvidePlugin({
-            /*$: 'jquery',
-            jQuery: 'jquery',
-            "window.jQuery": 'jquery',
-            "windows.jQuery": 'jquery',
-            Popper: ['popper.js', 'default'],
-            Util: "exports-loader?Util!bootstrap/js/dist/util",
-            Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"*/
-
+        new webpack.ProvidePlugin({            
             $: 'jquery',
               jQuery: 'jquery',
               'window.jQuery': 'jquery',
-              tether: 'tether',
-              Tether: 'tether',
-              'window.Tether': 'tether',
               Popper: ['popper.js', 'default'],
-              'window.Tether': 'tether',
               Alert: 'exports-loader?Alert!bootstrap/js/dist/alert',
               Button: 'exports-loader?Button!bootstrap/js/dist/button',
               Carousel: 'exports-loader?Carousel!bootstrap/js/dist/carousel',
@@ -66,10 +47,7 @@ module.exports = {
               Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
               Util: 'exports-loader?Util!bootstrap/js/dist/util'
         }),
-        new webpack.HotModuleReplacementPlugin(),
-       /* new TransferWebpackPlugin([
-            { from: './css' },
-        ])*/
+        new webpack.HotModuleReplacementPlugin()
     ],
     module: {
         rules: [
