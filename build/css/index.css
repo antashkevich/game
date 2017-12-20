@@ -188,6 +188,8 @@ header.masthead a {
         background: url(../images/jquery.png) center no-repeat; }
       .features-icons ul li .canvas-icon {
         background: url(../images/canvas.png) center no-repeat; }
+      .features-icons ul li .waa-icon {
+        background: url(../images/waa.png) center no-repeat; }
       .features-icons ul li .boot-icon {
         background: url(../images/bootstrap.png) center no-repeat; }
       .features-icons ul li .web3-icon {
@@ -198,6 +200,8 @@ header.masthead a {
         background: url(../images/CSS3.png) center no-repeat; }
       .features-icons ul li .sass-icon {
         background: url(../images/sass.png) center no-repeat; }
+      .features-icons ul li .phaser-icon {
+        background: url(../images/phaser-logo.png) center no-repeat; }
       .features-icons ul li .tool-game {
         display: inline-block;
         width: 50px;
