@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4d7e735a2e03cf6a46bd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "077cf306daa7836e3de0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11402,6 +11402,7 @@ let dude;
 let man;
 
 let zombie;
+let gameOverText;
 
 let platforms;
 let dangerousObstacles;

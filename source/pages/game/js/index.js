@@ -259,6 +259,7 @@ let dude;
 let man;
 
 let zombie;
+let gameOverText;
 
 let platforms;
 let dangerousObstacles;
