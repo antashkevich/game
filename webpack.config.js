@@ -29,23 +29,8 @@ module.exports = {
             chunks: ['game'],
             template: PATHS.source + '/pages/game/game.pug'
         }),
-       /* new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
-        }),*/
         new ExtractTextPlugin('./css/[name].css'),
-
-        /*new TransferWebpackPlugin([
-          { from: './css' },
-        ]),*/
         new webpack.ProvidePlugin({
-            /*$: 'jquery',
-            jQuery: 'jquery',
-            "window.jQuery": 'jquery',
-            "windows.jQuery": 'jquery',
-            Popper: ['popper.js', 'default'],
-            Util: "exports-loader?Util!bootstrap/js/dist/util",
-            Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"*/
-
             $: 'jquery',
               jQuery: 'jquery',
               'window.jQuery': 'jquery',
@@ -67,9 +52,6 @@ module.exports = {
               Util: 'exports-loader?Util!bootstrap/js/dist/util'
         }),
         new webpack.HotModuleReplacementPlugin(),
-       /* new TransferWebpackPlugin([
-            { from: './css' },
-        ])*/
     ],
     module: {
         rules: [
