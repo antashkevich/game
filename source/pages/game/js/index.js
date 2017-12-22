@@ -260,9 +260,6 @@ let man;
 
 let zombie;
 
-let gameOverText1;
-let gameOverText2;
-
 let platforms;
 let dangerousObstacles;
 let simpleBox;
