@@ -30,7 +30,6 @@ import soundIcon from '../images/sound.png';
 import playIcon from '../images/play.png';
 import manIcon from '../images/man.png';
 import bgForTabScore from '../images/bgForTableScore.png';
-import progBarRun from '../images/progressBarRunner.png';
 
 import dudeSprite from '../images/dude_sprite.png';
 import zombMale from '../images/zombieMale_sprite.png';
@@ -71,13 +70,20 @@ const gameHeight = window.innerHeight > 660 ? 660 : window.innerHeight;
 const game = new Phaser.Game(window.innerWidth, gameHeight, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 
 function preload() {
-	let key = 'loading'; 
-	let data = new Image();
-	data.src = progBarRun;
-	game.cache.addImage(key, progBarRun, data);
-	let loadingBar = game.add.image(game.width/2, game.height/2, 'loading');
-	loadingBar.anchor.setTo(0.5, 0.5);
-	game.load.setPreloadSprite(loadingBar, 0);
+	let loadingText = game.add.text(game.width/2, game.height/2, 'Loading...', { fill: '#ffffff' });
+	loadingText.anchor.setTo(0.5, 0.5);
+
+    game.load.onLoadStart.add(function loadStart() {
+	    loadingText.setText("Loading...");
+	}, this);
+
+    game.load.onFileComplete.add(function fileComplete(progress, cacheKey, success, totalLoaded, totalFiles) {
+	    loadingText.setText("File Complete: " + progress + "% - " + totalLoaded + " out of " + totalFiles);
+	}, this);
+
+    game.load.onLoadComplete.add(function loadComplete() {
+    	loadingText.setText("Loading Completed.");
+	}, this);
 
 	this.load.image('sky', bgMain);
 	this.load.image('ground2', groundIcon2);

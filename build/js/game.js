@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2d52cd6e71d1fb85a8aa"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8065b7fd7b215f939847"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11089,61 +11089,58 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__images_man_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_28__images_man_png__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__images_bgForTableScore_png__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__images_bgForTableScore_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_29__images_bgForTableScore_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__images_progressBarRunner_png__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__images_progressBarRunner_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_30__images_progressBarRunner_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__images_dude_sprite_png__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__images_dude_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_31__images_dude_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__images_zombieMale_sprite_png__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__images_zombieMale_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_32__images_zombieMale_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__images_zombieFemale_sprite_png__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__images_zombieFemale_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_33__images_zombieFemale_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__images_belarusianCoin1_sprite_png__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__images_belarusianCoin1_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_34__images_belarusianCoin1_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__images_belarusianCoin2_sprite_png__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__images_belarusianCoin2_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_35__images_belarusianCoin2_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__images_belarusianCoin050_sprite_png__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__images_belarusianCoin050_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_36__images_belarusianCoin050_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__images_belarusianCoin020_sprite_png__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__images_belarusianCoin020_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_37__images_belarusianCoin020_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__images_belarusianCoin010_sprite_png__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__images_belarusianCoin010_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_38__images_belarusianCoin010_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__images_belarusianCoin05_sprite_png__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__images_belarusianCoin05_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_39__images_belarusianCoin05_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__images_belarusianCoin02_sprite_png__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__images_belarusianCoin02_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_40__images_belarusianCoin02_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__images_belarusianCoin01_sprite_png__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__images_belarusianCoin01_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_41__images_belarusianCoin01_sprite_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__images_dude_sprite_json__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__images_dude_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_42__images_dude_sprite_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__images_zombieFemale_sprite_json__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__images_zombieFemale_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_43__images_zombieFemale_sprite_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__images_zombieMale_sprite_json__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__images_zombieMale_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_44__images_zombieMale_sprite_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__sounds_rockBreak_wav__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__sounds_rockBreak_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_45__sounds_rockBreak_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__sounds_churchBell_wav__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__sounds_churchBell_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_46__sounds_churchBell_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__sounds_pistol_wav__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__sounds_pistol_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_47__sounds_pistol_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__sounds_zombieDead7_wav__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__sounds_zombieDead7_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_48__sounds_zombieDead7_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__sounds_zombieDead6_wav__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__sounds_zombieDead6_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_49__sounds_zombieDead6_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__sounds_zombieDead5_wav__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__sounds_zombieDead5_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_50__sounds_zombieDead5_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__sounds_zombieDead4_wav__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__sounds_zombieDead4_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_51__sounds_zombieDead4_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__sounds_zombieDead3_wav__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__sounds_zombieDead3_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_52__sounds_zombieDead3_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__sounds_zombieDead2_wav__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__sounds_zombieDead2_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_53__sounds_zombieDead2_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__sounds_zombieDead1_wav__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__sounds_zombieDead1_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_54__sounds_zombieDead1_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__sounds_ambientmain_wav__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__sounds_ambientmain_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_55__sounds_ambientmain_wav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__sounds_coin_wav__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__sounds_coin_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_56__sounds_coin_wav__);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__images_dude_sprite_png__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__images_dude_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_30__images_dude_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__images_zombieMale_sprite_png__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__images_zombieMale_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_31__images_zombieMale_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__images_zombieFemale_sprite_png__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__images_zombieFemale_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_32__images_zombieFemale_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__images_belarusianCoin1_sprite_png__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__images_belarusianCoin1_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_33__images_belarusianCoin1_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__images_belarusianCoin2_sprite_png__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__images_belarusianCoin2_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_34__images_belarusianCoin2_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__images_belarusianCoin050_sprite_png__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__images_belarusianCoin050_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_35__images_belarusianCoin050_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__images_belarusianCoin020_sprite_png__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__images_belarusianCoin020_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_36__images_belarusianCoin020_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__images_belarusianCoin010_sprite_png__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__images_belarusianCoin010_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_37__images_belarusianCoin010_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__images_belarusianCoin05_sprite_png__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__images_belarusianCoin05_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_38__images_belarusianCoin05_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__images_belarusianCoin02_sprite_png__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__images_belarusianCoin02_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_39__images_belarusianCoin02_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__images_belarusianCoin01_sprite_png__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__images_belarusianCoin01_sprite_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_40__images_belarusianCoin01_sprite_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__images_dude_sprite_json__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__images_dude_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_41__images_dude_sprite_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__images_zombieFemale_sprite_json__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__images_zombieFemale_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_42__images_zombieFemale_sprite_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__images_zombieMale_sprite_json__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__images_zombieMale_sprite_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_43__images_zombieMale_sprite_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__sounds_rockBreak_wav__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__sounds_rockBreak_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_44__sounds_rockBreak_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__sounds_churchBell_wav__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__sounds_churchBell_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_45__sounds_churchBell_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__sounds_pistol_wav__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__sounds_pistol_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_46__sounds_pistol_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__sounds_zombieDead7_wav__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__sounds_zombieDead7_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_47__sounds_zombieDead7_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__sounds_zombieDead6_wav__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__sounds_zombieDead6_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_48__sounds_zombieDead6_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__sounds_zombieDead5_wav__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__sounds_zombieDead5_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_49__sounds_zombieDead5_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__sounds_zombieDead4_wav__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__sounds_zombieDead4_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_50__sounds_zombieDead4_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__sounds_zombieDead3_wav__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__sounds_zombieDead3_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_51__sounds_zombieDead3_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__sounds_zombieDead2_wav__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__sounds_zombieDead2_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_52__sounds_zombieDead2_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__sounds_zombieDead1_wav__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__sounds_zombieDead1_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_53__sounds_zombieDead1_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__sounds_ambientmain_wav__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__sounds_ambientmain_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_54__sounds_ambientmain_wav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__sounds_coin_wav__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__sounds_coin_wav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_55__sounds_coin_wav__);
 
 
 
@@ -11216,13 +11213,20 @@ const gameHeight = window.innerHeight > 660 ? 660 : window.innerHeight;
 const game = new __WEBPACK_IMPORTED_MODULE_3_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.Game(window.innerWidth, gameHeight, __WEBPACK_IMPORTED_MODULE_3_expose_loader_Phaser_phaser_ce_build_custom_phaser_split_js___default.a.AUTO, '', { preload: preload, create: create, update: update });
 
 function preload() {
-	let key = 'loading'; 
-	let data = new Image();
-	data.src = __WEBPACK_IMPORTED_MODULE_30__images_progressBarRunner_png___default.a;
-	game.cache.addImage(key, __WEBPACK_IMPORTED_MODULE_30__images_progressBarRunner_png___default.a, data);
-	let loadingBar = game.add.image(game.width/2, game.height/2, 'loading');
-	loadingBar.anchor.setTo(0.5, 0.5);
-	game.load.setPreloadSprite(loadingBar, 0);
+	let loadingText = game.add.text(game.width/2, game.height/2, 'Loading...', { fill: '#ffffff' });
+	loadingText.anchor.setTo(0.5, 0.5);
+
+    game.load.onLoadStart.add(function loadStart() {
+	    loadingText.setText("Loading...");
+	}, this);
+
+    game.load.onFileComplete.add(function fileComplete(progress, cacheKey, success, totalLoaded, totalFiles) {
+	    loadingText.setText("File Complete: " + progress + "% - " + totalLoaded + " out of " + totalFiles);
+	}, this);
+
+    game.load.onLoadComplete.add(function loadComplete() {
+    	loadingText.setText("Loading Completed.");
+	}, this);
 
 	this.load.image('sky', __WEBPACK_IMPORTED_MODULE_4__images_bgMain_png___default.a);
 	this.load.image('ground2', __WEBPACK_IMPORTED_MODULE_7__images_ground2_png___default.a);
@@ -11250,34 +11254,34 @@ function preload() {
 	this.load.image('man', __WEBPACK_IMPORTED_MODULE_28__images_man_png___default.a);
 	this.load.image('bgForTableScore', __WEBPACK_IMPORTED_MODULE_29__images_bgForTableScore_png___default.a);
 
-	this.load.atlas('dude', __WEBPACK_IMPORTED_MODULE_31__images_dude_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_42__images_dude_sprite_json___default.a);
-	this.load.atlas('zombieFemale', __WEBPACK_IMPORTED_MODULE_33__images_zombieFemale_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_43__images_zombieFemale_sprite_json___default.a);
-	this.load.atlas('zombieMale', __WEBPACK_IMPORTED_MODULE_32__images_zombieMale_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_44__images_zombieMale_sprite_json___default.a);
+	this.load.atlas('dude', __WEBPACK_IMPORTED_MODULE_30__images_dude_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_41__images_dude_sprite_json___default.a);
+	this.load.atlas('zombieFemale', __WEBPACK_IMPORTED_MODULE_32__images_zombieFemale_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_42__images_zombieFemale_sprite_json___default.a);
+	this.load.atlas('zombieMale', __WEBPACK_IMPORTED_MODULE_31__images_zombieMale_sprite_png___default.a, __WEBPACK_IMPORTED_MODULE_43__images_zombieMale_sprite_json___default.a);
 
-	this.load.spritesheet('coin1', __WEBPACK_IMPORTED_MODULE_34__images_belarusianCoin1_sprite_png___default.a, 68, 68);
-	this.load.spritesheet('coin2', __WEBPACK_IMPORTED_MODULE_35__images_belarusianCoin2_sprite_png___default.a, 68, 68);
-	this.load.spritesheet('coin050', __WEBPACK_IMPORTED_MODULE_36__images_belarusianCoin050_sprite_png___default.a, 68, 68);
-	this.load.spritesheet('coin020', __WEBPACK_IMPORTED_MODULE_37__images_belarusianCoin020_sprite_png___default.a, 68, 68);
-	this.load.spritesheet('coin010', __WEBPACK_IMPORTED_MODULE_38__images_belarusianCoin010_sprite_png___default.a, 68, 68);
-	this.load.spritesheet('coin05', __WEBPACK_IMPORTED_MODULE_39__images_belarusianCoin05_sprite_png___default.a, 68, 68);
-	this.load.spritesheet('coin02', __WEBPACK_IMPORTED_MODULE_40__images_belarusianCoin02_sprite_png___default.a, 68, 68);
-	this.load.spritesheet('coin01', __WEBPACK_IMPORTED_MODULE_41__images_belarusianCoin01_sprite_png___default.a, 68, 68);
+	this.load.spritesheet('coin1', __WEBPACK_IMPORTED_MODULE_33__images_belarusianCoin1_sprite_png___default.a, 68, 68);
+	this.load.spritesheet('coin2', __WEBPACK_IMPORTED_MODULE_34__images_belarusianCoin2_sprite_png___default.a, 68, 68);
+	this.load.spritesheet('coin050', __WEBPACK_IMPORTED_MODULE_35__images_belarusianCoin050_sprite_png___default.a, 68, 68);
+	this.load.spritesheet('coin020', __WEBPACK_IMPORTED_MODULE_36__images_belarusianCoin020_sprite_png___default.a, 68, 68);
+	this.load.spritesheet('coin010', __WEBPACK_IMPORTED_MODULE_37__images_belarusianCoin010_sprite_png___default.a, 68, 68);
+	this.load.spritesheet('coin05', __WEBPACK_IMPORTED_MODULE_38__images_belarusianCoin05_sprite_png___default.a, 68, 68);
+	this.load.spritesheet('coin02', __WEBPACK_IMPORTED_MODULE_39__images_belarusianCoin02_sprite_png___default.a, 68, 68);
+	this.load.spritesheet('coin01', __WEBPACK_IMPORTED_MODULE_40__images_belarusianCoin01_sprite_png___default.a, 68, 68);
 
 	this.load.spritesheet('explosion', __WEBPACK_IMPORTED_MODULE_5__images_explode_png___default.a, 128, 128);
 
-	this.load.audio('coinSound', __WEBPACK_IMPORTED_MODULE_56__sounds_coin_wav___default.a);
-	this.load.audio('environment', __WEBPACK_IMPORTED_MODULE_55__sounds_ambientmain_wav___default.a);
-	this.load.audio('zombieDead1', __WEBPACK_IMPORTED_MODULE_54__sounds_zombieDead1_wav___default.a);
-	this.load.audio('zombieDead2', __WEBPACK_IMPORTED_MODULE_53__sounds_zombieDead2_wav___default.a);
-	this.load.audio('zombieDead3', __WEBPACK_IMPORTED_MODULE_52__sounds_zombieDead3_wav___default.a);
-	this.load.audio('zombieDead4', __WEBPACK_IMPORTED_MODULE_51__sounds_zombieDead4_wav___default.a);
-	this.load.audio('zombieDead5', __WEBPACK_IMPORTED_MODULE_50__sounds_zombieDead5_wav___default.a);
-	this.load.audio('zombieDead6', __WEBPACK_IMPORTED_MODULE_49__sounds_zombieDead6_wav___default.a);
-	this.load.audio('zombieDead7', __WEBPACK_IMPORTED_MODULE_48__sounds_zombieDead7_wav___default.a);
+	this.load.audio('coinSound', __WEBPACK_IMPORTED_MODULE_55__sounds_coin_wav___default.a);
+	this.load.audio('environment', __WEBPACK_IMPORTED_MODULE_54__sounds_ambientmain_wav___default.a);
+	this.load.audio('zombieDead1', __WEBPACK_IMPORTED_MODULE_53__sounds_zombieDead1_wav___default.a);
+	this.load.audio('zombieDead2', __WEBPACK_IMPORTED_MODULE_52__sounds_zombieDead2_wav___default.a);
+	this.load.audio('zombieDead3', __WEBPACK_IMPORTED_MODULE_51__sounds_zombieDead3_wav___default.a);
+	this.load.audio('zombieDead4', __WEBPACK_IMPORTED_MODULE_50__sounds_zombieDead4_wav___default.a);
+	this.load.audio('zombieDead5', __WEBPACK_IMPORTED_MODULE_49__sounds_zombieDead5_wav___default.a);
+	this.load.audio('zombieDead6', __WEBPACK_IMPORTED_MODULE_48__sounds_zombieDead6_wav___default.a);
+	this.load.audio('zombieDead7', __WEBPACK_IMPORTED_MODULE_47__sounds_zombieDead7_wav___default.a);
 
-	this.load.audio('pistol', __WEBPACK_IMPORTED_MODULE_47__sounds_pistol_wav___default.a);
-	this.load.audio('churchBell', __WEBPACK_IMPORTED_MODULE_46__sounds_churchBell_wav___default.a);
-	this.load.audio('rockBreak', __WEBPACK_IMPORTED_MODULE_45__sounds_rockBreak_wav___default.a);
+	this.load.audio('pistol', __WEBPACK_IMPORTED_MODULE_46__sounds_pistol_wav___default.a);
+	this.load.audio('churchBell', __WEBPACK_IMPORTED_MODULE_45__sounds_churchBell_wav___default.a);
+	this.load.audio('rockBreak', __WEBPACK_IMPORTED_MODULE_44__sounds_rockBreak_wav___default.a);
 }
 
 function tAJAXStorage() {
@@ -120378,160 +120382,154 @@ module.exports = __webpack_require__.p + "images/bgForTableScore.png";
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/progressBarRunner.png";
+module.exports = __webpack_require__.p + "images/dude_sprite.png";
 
 /***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/dude_sprite.png";
+module.exports = __webpack_require__.p + "images/zombieMale_sprite.png";
 
 /***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/zombieMale_sprite.png";
+module.exports = __webpack_require__.p + "images/zombieFemale_sprite.png";
 
 /***/ }),
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/zombieFemale_sprite.png";
+module.exports = __webpack_require__.p + "images/belarusianCoin1_sprite.png";
 
 /***/ }),
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/belarusianCoin1_sprite.png";
+module.exports = __webpack_require__.p + "images/belarusianCoin2_sprite.png";
 
 /***/ }),
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/belarusianCoin2_sprite.png";
+module.exports = __webpack_require__.p + "images/belarusianCoin050_sprite.png";
 
 /***/ }),
 /* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/belarusianCoin050_sprite.png";
+module.exports = __webpack_require__.p + "images/belarusianCoin020_sprite.png";
 
 /***/ }),
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/belarusianCoin020_sprite.png";
+module.exports = __webpack_require__.p + "images/belarusianCoin010_sprite.png";
 
 /***/ }),
 /* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/belarusianCoin010_sprite.png";
+module.exports = __webpack_require__.p + "images/belarusianCoin05_sprite.png";
 
 /***/ }),
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/belarusianCoin05_sprite.png";
+module.exports = __webpack_require__.p + "images/belarusianCoin02_sprite.png";
 
 /***/ }),
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/belarusianCoin02_sprite.png";
+module.exports = __webpack_require__.p + "images/belarusianCoin01_sprite.png";
 
 /***/ }),
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/belarusianCoin01_sprite.png";
+module.exports = __webpack_require__.p + "images/dude_sprite.json";
 
 /***/ }),
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/dude_sprite.json";
+module.exports = __webpack_require__.p + "images/zombieFemale_sprite.json";
 
 /***/ }),
 /* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/zombieFemale_sprite.json";
+module.exports = __webpack_require__.p + "images/zombieMale_sprite.json";
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/zombieMale_sprite.json";
+module.exports = __webpack_require__.p + "sounds/rockBreak.wav";
 
 /***/ }),
 /* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/rockBreak.wav";
+module.exports = __webpack_require__.p + "sounds/churchBell.wav";
 
 /***/ }),
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/churchBell.wav";
+module.exports = __webpack_require__.p + "sounds/pistol.wav";
 
 /***/ }),
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/pistol.wav";
+module.exports = __webpack_require__.p + "sounds/zombieDead7.wav";
 
 /***/ }),
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/zombieDead7.wav";
+module.exports = __webpack_require__.p + "sounds/zombieDead6.wav";
 
 /***/ }),
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/zombieDead6.wav";
+module.exports = __webpack_require__.p + "sounds/zombieDead5.wav";
 
 /***/ }),
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/zombieDead5.wav";
+module.exports = __webpack_require__.p + "sounds/zombieDead4.wav";
 
 /***/ }),
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/zombieDead4.wav";
+module.exports = __webpack_require__.p + "sounds/zombieDead3.wav";
 
 /***/ }),
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/zombieDead3.wav";
+module.exports = __webpack_require__.p + "sounds/zombieDead2.wav";
 
 /***/ }),
 /* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/zombieDead2.wav";
+module.exports = __webpack_require__.p + "sounds/zombieDead1.wav";
 
 /***/ }),
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "sounds/zombieDead1.wav";
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
 module.exports = __webpack_require__.p + "sounds/ambientmain.wav";
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "sounds/coin.wav";
