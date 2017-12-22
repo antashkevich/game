@@ -1,9 +1,17 @@
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+/* @font-face {
+  font-family: "Zombie_Holocaust";
+  src: url("./fonts/Zombie_Holocaust.ttf") format("truetype");
+} */
 @font-face {
   font-family: "Exquisite";
   src: url("./fonts/CrpyGrv0.TTF") format("truetype");
 }
+
+//@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js');
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round');
+
 
 .bg-light {
     background-color: #e4e4e4!important;
@@ -164,64 +172,15 @@ header.masthead {
 
 .features-icons {
   padding-top: 2rem;
-  padding-bottom: 2rem;
-  p {
-    span {
-      font-weight: bold;
-    }
-  }
-  ul {
-    display: inline-block;
-    width: 210px;
-    margin: 0;
-    padding: 0;
-    li {
-        list-style: none;
-        display: flex;
-        align-items: center;    
-        font-weight: 600;  
-        margin-bottom: 10px;  
-        .js-icon {
-          background: url('./images/js.png') center no-repeat;          
-        }
-        .jq-icon {
-          background: url('./images/jquery.png') center no-repeat;
-        }
-        .canvas-icon {
-          background: url('./images/canvas.png') center no-repeat;
-        }
-        .waa-icon {
-          background: url('./images/waa.png') center no-repeat;
-        }
-        .boot-icon {
-          background: url('./images/bootstrap.png') center no-repeat;
-        }
-        .web3-icon {
-          background: url('./images/webpack.png') center no-repeat;
-        }
-        .html5-icon {
-          background: url('./images/HTML5.png') center no-repeat;
-        }
-        .css3-icon {
-          background: url('./images/CSS3.png') center no-repeat;
-        }
-        .sass-icon {
-          background: url('./images/sass.png') center no-repeat;
-        }
-        .phaser-icon {
-          background: url('./images/phaser-logo.png') center no-repeat;
-        }
-        .tool-game {
-          display: inline-block;
-          width: 50px;
-          height: 50px;
-          background-size: contain;
-          margin-right: 10px;
-        }
-    }
-  }
-}
-
+  padding-bottom: 2rem; }
+  .features-icons .features-icons-item {
+    max-width: 20rem; }
+    .features-icons .features-icons-item .features-icons-icon {
+      height: 7rem; }
+      .features-icons .features-icons-item .features-icons-icon i {
+        font-size: 4.5rem; }
+    .features-icons .features-icons-item:hover .features-icons-icon i {
+      font-size: 5rem; }
 
 .testimonials {
   padding-top: 4rem;

@@ -1,3 +1,5 @@
 body {
   background: url(../images/header-bg.jpg);
-  background-size: cover; }
+  background-size: cover;
+  margin: 0;
+  padding: 0; }
